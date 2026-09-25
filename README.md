@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-> A researched awesome list of Bitcoin finance projects, protocols, tools and ways to use BTC.
+> An awesome list of Bitcoin finance projects, protocols, tools and ways to use BTC.
 
 Explore **Bitcoin-native contracts, payment layers, sidechains, BTC representations, staking, lending, stablecoins, trading and yield**, plus the infrastructure that makes them possible.
 
