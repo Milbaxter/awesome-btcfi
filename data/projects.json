@@ -1,0 +1,3152 @@
+{
+  "schema_version": 1,
+  "title": "Awesome BTCfi",
+  "as_of": "2026-09-25",
+  "scope": "A broad, curated and source-reviewed directory; not an exhaustive census or investment recommendation.",
+  "categories": [
+    {
+      "id": "bitcoin-primitives",
+      "title": "Bitcoin contracts and asset protocols"
+    },
+    {
+      "id": "networks",
+      "title": "Execution networks and Bitcoin layers"
+    },
+    {
+      "id": "bitcoin-assets",
+      "title": "Bitcoin representations and bridges"
+    },
+    {
+      "id": "staking",
+      "title": "Staking and shared security"
+    },
+    {
+      "id": "lending",
+      "title": "Lending and Bitcoin collateral"
+    },
+    {
+      "id": "stablecoins",
+      "title": "Stablecoins and synthetic dollars"
+    },
+    {
+      "id": "trading",
+      "title": "Exchanges and trading"
+    },
+    {
+      "id": "yield",
+      "title": "Yield markets and managed strategies"
+    },
+    {
+      "id": "swaps",
+      "title": "Cross-chain and atomic swaps"
+    },
+    {
+      "id": "payments",
+      "title": "Payments, Lightning liquidity and ecash"
+    },
+    {
+      "id": "wallets",
+      "title": "Wallets and access"
+    },
+    {
+      "id": "builders",
+      "title": "Developer tools and infrastructure"
+    },
+    {
+      "id": "research",
+      "title": "Research, analytics and ecosystem maps"
+    },
+    {
+      "id": "centralized",
+      "title": "Centralized and institutional finance"
+    },
+    {
+      "id": "historical",
+      "title": "Discontinued, deprecated and changed projects"
+    }
+  ],
+  "entries": [
+    {
+      "id": "alkanes",
+      "name": "Alkanes",
+      "category": "bitcoin-primitives",
+      "website": "https://github.com/kungfuflex/alkanes-rs",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "protocol",
+      "description": "WASM-based metaprotocol supporting programmable assets and DeFi logic.",
+      "bitcoin_mechanism": "Bitcoin witness data interpreted by a metaprotocol runtime and indexer.",
+      "review_focus": "Runtime correctness, indexer agreement and upgrade rules.",
+      "status": "documented",
+      "status_note": "Contract execution is not Bitcoin Core executing a general-purpose VM.",
+      "sources": [
+        {
+          "url": "https://github.com/kungfuflex/alkanes-rs",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "ark",
+      "name": "Ark",
+      "category": "bitcoin-primitives",
+      "website": "https://ark-protocol.org/",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "protocol",
+      "description": "Shared-UTXO payment design with virtual UTXOs and a coordinating server.",
+      "bitcoin_mechanism": "Prearranged Bitcoin transaction trees and off-chain transfers.",
+      "review_focus": "Server availability, refresh deadlines, transfer assumptions and unilateral exit costs.",
+      "status": "documented",
+      "status_note": "Implementations differ; see Arkade and Second.",
+      "sources": [
+        {
+          "url": "https://ark-protocol.org/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "bitvm",
+      "name": "BitVM",
+      "category": "bitcoin-primitives",
+      "website": "https://bitvm.org/",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "research",
+      "description": "Off-chain computation with Bitcoin-enforced dispute mechanisms, used in bridge and rollup designs.",
+      "bitcoin_mechanism": "Fraud-proof constructions using existing Bitcoin scripting capabilities.",
+      "review_focus": "Version-specific challengers, setup, liquidity and dispute assumptions.",
+      "status": "research",
+      "status_note": "BitVM is a construction family; its existence does not prove a particular bridge is deployed or safe.",
+      "sources": [
+        {
+          "url": "https://bitvm.org/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "brc-20",
+      "name": "BRC-20",
+      "category": "bitcoin-primitives",
+      "website": "https://domo-2.gitbook.io/brc-20-experiment",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "standard",
+      "description": "Inscription-based token experiment with off-chain balance interpretation.",
+      "bitcoin_mechanism": "Deploy, mint and transfer inscriptions interpreted by indexers.",
+      "review_focus": "Indexer agreement, evolving protocol rules and token liquidity.",
+      "status": "documented",
+      "status_note": "Original specification is historical; it points to Layer 1 Foundation for evolving documentation.",
+      "sources": [
+        {
+          "url": "https://domo-2.gitbook.io/brc-20-experiment",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "discreet-log-contracts-dlcs",
+      "name": "Discreet Log Contracts (DLCs)",
+      "category": "bitcoin-primitives",
+      "website": "https://dlc.wiki/",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "standard",
+      "description": "Oracle-attested Bitcoin contracts for contingent payments, derivatives and collateral arrangements.",
+      "bitcoin_mechanism": "Bitcoin transactions with outcomes selected using oracle signatures.",
+      "review_focus": "Oracle accuracy and availability, contract construction and refund paths.",
+      "status": "documented",
+      "status_note": "A contract family, not a single lending platform.",
+      "sources": [
+        {
+          "url": "https://dlc.wiki/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        },
+        {
+          "url": "https://github.com/discreetlogcontracts/dlcspecs",
+          "type": "primary",
+          "checked": "2026-09-25",
+          "title": "DLC specifications"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "lightning-network",
+      "name": "Lightning Network",
+      "category": "bitcoin-primitives",
+      "website": "https://lightning.network/",
+      "networks": [
+        "Bitcoin",
+        "Lightning"
+      ],
+      "kind": "protocol",
+      "description": "Payment channels that route BTC off-chain and can settle to Bitcoin.",
+      "bitcoin_mechanism": "Bitcoin channel transactions and timelocked settlement.",
+      "review_focus": "Channel backups, online monitoring, liquidity and on-chain exit fees.",
+      "status": "documented",
+      "status_note": "Protocol overview reviewed; individual wallet custody varies.",
+      "sources": [
+        {
+          "url": "https://lightning.network/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "op-net",
+      "name": "OP_NET",
+      "category": "bitcoin-primitives",
+      "website": "https://docs.opnet.org/",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "protocol",
+      "description": "Smart-contract execution system that embeds contract data in Bitcoin transactions.",
+      "bitcoin_mechanism": "Additional execution and verification rules applied to Bitcoin witness data.",
+      "review_focus": "Execution consensus, indexing, contract security and network-specific deployment stage.",
+      "status": "documented",
+      "status_note": "Documentation reviewed; this entry does not certify mainnet deployment or inherit marketing security claims.",
+      "sources": [
+        {
+          "url": "https://docs.opnet.org/getting-started/introduction-to-op-net/bitcoin-smart-contracts-explained",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "ordinals",
+      "name": "Ordinals",
+      "category": "bitcoin-primitives",
+      "website": "https://docs.ordinals.com/",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "standard",
+      "description": "Satoshi indexing and inscriptions underlying collectible markets and collateral use cases.",
+      "bitcoin_mechanism": "Bitcoin transactions interpreted by ordinal-aware software.",
+      "review_focus": "Indexer conventions, UTXO handling, fees and collectible liquidity.",
+      "status": "documented",
+      "status_note": "Adjacent infrastructure, not an intrinsic BTC yield mechanism.",
+      "sources": [
+        {
+          "url": "https://docs.ordinals.com/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "rgb",
+      "name": "RGB",
+      "category": "bitcoin-primitives",
+      "website": "https://rgb.tech/",
+      "networks": [
+        "Bitcoin",
+        "Lightning"
+      ],
+      "kind": "protocol",
+      "description": "Client-validated contracts and asset issuance anchored to Bitcoin outputs.",
+      "bitcoin_mechanism": "Off-chain contract state and proofs associated with Bitcoin ownership.",
+      "review_focus": "Proof backups, wallet interoperability and issuer terms.",
+      "status": "documented",
+      "status_note": "Issued assets are distinct from native BTC.",
+      "sources": [
+        {
+          "url": "https://rgb.tech/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "rgb-plus-plus",
+      "name": "RGB++",
+      "category": "bitcoin-primitives",
+      "website": "https://github.com/utxostack/rgbpp-sdk",
+      "networks": [
+        "Bitcoin",
+        "Nervos CKB"
+      ],
+      "kind": "protocol",
+      "description": "Asset protocol connecting Bitcoin UTXOs and CKB cells through isomorphic bindings.",
+      "bitcoin_mechanism": "Asset ownership bindings across Bitcoin and CKB.",
+      "review_focus": "CKB dependencies and the separate custody model of any BTC wrapper.",
+      "status": "documented",
+      "status_note": "Distinct from RGB; token movement does not by itself make native BTC bridge-free.",
+      "sources": [
+        {
+          "url": "https://talk.nervos.org/t/rgb-protocol-light-paper-translation/7790",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "runes",
+      "name": "Runes",
+      "category": "bitcoin-primitives",
+      "website": "https://docs.ordinals.com/runes.html",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "standard",
+      "description": "Fungible-token metaprotocol with balances assigned to Bitcoin outputs.",
+      "bitcoin_mechanism": "Runestones encoded in Bitcoin transactions.",
+      "review_focus": "Indexer correctness, token economics, market liquidity and fee costs.",
+      "status": "documented",
+      "status_note": "Rune tokens are separate assets, not bitcoin.",
+      "sources": [
+        {
+          "url": "https://docs.ordinals.com/runes.html",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "taproot-assets",
+      "name": "Taproot Assets",
+      "category": "bitcoin-primitives",
+      "website": "https://docs.lightning.engineering/the-lightning-network/taproot-assets",
+      "networks": [
+        "Bitcoin",
+        "Lightning"
+      ],
+      "kind": "protocol",
+      "description": "Asset issuance and transfers using Taproot, including Lightning-based transfers.",
+      "bitcoin_mechanism": "Bitcoin commitments, client-side asset proofs and Lightning channels.",
+      "review_focus": "Issuer backing, proof availability, wallet compatibility and channel liquidity.",
+      "status": "documented",
+      "status_note": "An issuance protocol; a dollar token adds its own issuer risk.",
+      "sources": [
+        {
+          "url": "https://docs.lightning.engineering/the-lightning-network/taproot-assets",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "alpen",
+      "name": "Alpen",
+      "category": "networks",
+      "website": "https://www.alpen.org/",
+      "networks": [
+        "Bitcoin",
+        "Alpen"
+      ],
+      "kind": "network",
+      "description": "EVM-compatible validity-rollup project for programmable Bitcoin applications.",
+      "bitcoin_mechanism": "Validity proofs with Bitcoin consensus and data availability in the documented design.",
+      "review_focus": "Testnet limitations, bridge construction and eventual mainnet controls.",
+      "status": "testnet",
+      "status_note": "Docs explicitly describe a work-in-progress rollup on Bitcoin signet; mainnet is a future release.",
+      "sources": [
+        {
+          "url": "https://docs.alpen.org/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "arch-network",
+      "name": "Arch Network",
+      "category": "networks",
+      "website": "https://www.arch.network/",
+      "networks": [
+        "Bitcoin",
+        "Arch"
+      ],
+      "kind": "network",
+      "description": "Financial application infrastructure designed around native Bitcoin settlement.",
+      "bitcoin_mechanism": "External execution and signing infrastructure connected to Bitcoin transactions.",
+      "review_focus": "Validator or signer control, settlement guarantees and the current application design.",
+      "status": "documented",
+      "status_note": "Native settlement language does not eliminate the need to review the execution and signing layer.",
+      "sources": [
+        {
+          "url": "https://www.arch.network/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "b2-network",
+      "name": "B2 Network",
+      "category": "networks",
+      "website": "https://www.bsquared.network/",
+      "networks": [
+        "Bitcoin",
+        "B2"
+      ],
+      "kind": "network",
+      "description": "Bitcoin extension ecosystem with rollup infrastructure, bridges and application products.",
+      "bitcoin_mechanism": "B2 Hub, execution network and separate asset bridges.",
+      "review_focus": "Bridge control, data availability, proof verification and current product scope.",
+      "status": "documented",
+      "status_note": "Official product navigation includes B2 Hub, Rollup and BTC Bridge.",
+      "sources": [
+        {
+          "url": "https://www.bsquared.network/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "bitcoinos",
+      "name": "BitcoinOS",
+      "category": "networks",
+      "website": "https://www.bitcoinos.build/",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "infrastructure",
+      "description": "BitSNARK and Grail-related infrastructure for Bitcoin proofs, bridges and interoperable applications.",
+      "bitcoin_mechanism": "Proof and bridge constructions intended to connect external computation to Bitcoin.",
+      "review_focus": "Implementation maturity, custody, proof challenge assumptions and each integration's deployment.",
+      "status": "documented",
+      "status_note": "Infrastructure claims reviewed; no blanket mainnet or trustlessness assertion.",
+      "sources": [
+        {
+          "url": "https://www.bitcoinos.build/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "bitlayer",
+      "name": "Bitlayer",
+      "category": "networks",
+      "website": "https://www.bitlayer.org/",
+      "networks": [
+        "Bitcoin",
+        "Bitlayer"
+      ],
+      "kind": "network",
+      "description": "Bitcoin execution ecosystem associated with BitVM infrastructure and the YBTC product family.",
+      "bitcoin_mechanism": "Separate execution and product-specific Bitcoin bridge arrangements.",
+      "review_focus": "Current deployment versus whitepaper design, custody and withdrawal conditions.",
+      "status": "documented",
+      "status_note": "Homepage now emphasizes YBTC; distinguish the network from individual products.",
+      "sources": [
+        {
+          "url": "https://static.bitlayer.org/Bitlayer-Technical-Whitepaper.pdf",
+          "type": "primary",
+          "checked": "2026-09-25"
+        },
+        {
+          "url": "https://www.bitlayer.org/",
+          "type": "primary",
+          "checked": "2026-09-25",
+          "title": "Current Bitlayer products"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "bob",
+      "name": "BOB",
+      "category": "networks",
+      "website": "https://docs.gobob.xyz/",
+      "networks": [
+        "Bitcoin",
+        "Ethereum",
+        "BOB"
+      ],
+      "kind": "network",
+      "description": "Hybrid-chain ecosystem with Bitcoin intents, DeFi access and Bitcoin vault development.",
+      "bitcoin_mechanism": "EVM execution plus route-dependent bridging, intents and BitVM-related infrastructure.",
+      "review_focus": "Current chain stage, privileged roles and the exact bridge or vault used.",
+      "status": "documented",
+      "status_note": "Docs describe several products; do not assign one security model to all of them.",
+      "sources": [
+        {
+          "url": "https://docs.gobob.xyz/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "citrea",
+      "name": "Citrea",
+      "category": "networks",
+      "website": "https://citrea.xyz/",
+      "networks": [
+        "Bitcoin",
+        "Citrea"
+      ],
+      "kind": "network",
+      "description": "Bitcoin rollup project with EVM applications and the Clementine cBTC bridge.",
+      "bitcoin_mechanism": "Validity proofs and a BitVM-based bridge architecture.",
+      "review_focus": "Bridge challengers and operators, exit liquidity, sequencer and upgrade controls.",
+      "status": "mainnet-announced",
+      "status_note": "Official homepage states that mainnet is live; no transaction testing performed.",
+      "sources": [
+        {
+          "url": "https://citrea.xyz/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        },
+        {
+          "url": "https://docs.citrea.xyz/",
+          "type": "primary",
+          "checked": "2026-09-25",
+          "title": "Citrea architecture and getting started"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "fractal-bitcoin",
+      "name": "Fractal Bitcoin",
+      "category": "networks",
+      "website": "https://docs.fractalbitcoin.io/",
+      "networks": [
+        "Bitcoin",
+        "Fractal"
+      ],
+      "kind": "network",
+      "description": "Bitcoin-code-based scaling ecosystem supporting asset protocols and applications.",
+      "bitcoin_mechanism": "Separate SHA256d network with its own asset and consensus arrangements.",
+      "review_focus": "Separate-chain security and the custody of any asset bridged from Bitcoin.",
+      "status": "documented",
+      "status_note": "FB is not BTC; compatibility with Bitcoin software does not imply identical security.",
+      "sources": [
+        {
+          "url": "https://docs.fractalbitcoin.io/getting-started/introduction",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "goat-network",
+      "name": "GOAT Network",
+      "category": "networks",
+      "website": "https://www.goat.network/",
+      "networks": [
+        "Bitcoin",
+        "GOAT"
+      ],
+      "kind": "network",
+      "description": "Bitcoin-oriented execution ecosystem advertising BTC fee income and programmable applications.",
+      "bitcoin_mechanism": "Separate execution network, bridge and operator arrangements.",
+      "review_focus": "BTC entry and exit path, operators, upgrades and fees versus token incentives.",
+      "status": "documented",
+      "status_note": "BTC-denominated fees and GOATED rewards are distinct reward sources.",
+      "sources": [
+        {
+          "url": "https://www.goat.network/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "hemi",
+      "name": "Hemi",
+      "category": "networks",
+      "website": "https://hemi.xyz/",
+      "networks": [
+        "Bitcoin",
+        "Ethereum",
+        "Hemi"
+      ],
+      "kind": "network",
+      "description": "Bitcoin and Ethereum ecosystem offering programmable BTC-related finance and institutional access.",
+      "bitcoin_mechanism": "Hemi execution with product-specific Bitcoin access and custody paths.",
+      "review_focus": "Settlement architecture, bridge or custody route and strategy dependencies.",
+      "status": "documented",
+      "status_note": "HEMI token staking is not the same thing as staking BTC.",
+      "sources": [
+        {
+          "url": "https://hemi.xyz/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "liquid-network",
+      "name": "Liquid Network",
+      "category": "networks",
+      "website": "https://www.liquid.net/",
+      "networks": [
+        "Bitcoin",
+        "Liquid"
+      ],
+      "kind": "network",
+      "description": "Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets.",
+      "bitcoin_mechanism": "BTC is represented as L-BTC on a federation-operated sidechain.",
+      "review_focus": "Federation control, peg-out access and issuer risk for non-BTC assets.",
+      "status": "documented",
+      "status_note": "Sidechain settlement has additional trust assumptions beyond Bitcoin.",
+      "sources": [
+        {
+          "url": "https://www.liquid.net/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "merlin-chain",
+      "name": "Merlin Chain",
+      "category": "networks",
+      "website": "https://merlinchain.io/",
+      "networks": [
+        "Bitcoin",
+        "Merlin"
+      ],
+      "kind": "network",
+      "description": "EVM-compatible ecosystem supporting Bitcoin-linked assets and applications.",
+      "bitcoin_mechanism": "A separate network with bridged Bitcoin assets and proof infrastructure.",
+      "review_focus": "Bridge custody, oracle and data availability assumptions, upgrades and exits.",
+      "status": "documented",
+      "status_note": "Rollup branding is not treated as proof of Bitcoin-enforced withdrawals.",
+      "sources": [
+        {
+          "url": "https://merlinchain.io/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "rootstock",
+      "name": "Rootstock",
+      "category": "networks",
+      "website": "https://rootstock.io/",
+      "networks": [
+        "Bitcoin",
+        "Rootstock"
+      ],
+      "kind": "network",
+      "description": "Bitcoin-oriented EVM sidechain hosting lending, stablecoins and trading.",
+      "bitcoin_mechanism": "RBTC peg and a separate smart-contract execution network.",
+      "review_focus": "Powpeg custody, bridge delays, network consensus and application contracts.",
+      "status": "documented",
+      "status_note": "The official site identifies Rootstock as a Bitcoin sidechain.",
+      "sources": [
+        {
+          "url": "https://rootstock.io/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "stacks",
+      "name": "Stacks",
+      "category": "networks",
+      "website": "https://www.stacks.co/",
+      "networks": [
+        "Bitcoin",
+        "Stacks"
+      ],
+      "kind": "network",
+      "description": "Smart-contract network for Bitcoin applications, including lending and exchanges using sBTC.",
+      "bitcoin_mechanism": "Separate execution with Bitcoin anchoring and an sBTC signer-based peg.",
+      "review_focus": "Signer custody, execution rules, upgrades and withdrawal mechanics.",
+      "status": "documented",
+      "status_note": "Treat Stacks execution and sBTC custody as separate review questions.",
+      "sources": [
+        {
+          "url": "https://www.stacks.co/sbtc",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "btc-b",
+      "name": "BTC.b",
+      "category": "bitcoin-assets",
+      "website": "https://docs.lombard.finance/learn/products/assets",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "asset",
+      "description": "Non-yield BTC representation operated by Lombard, originally launched by Ava Labs.",
+      "bitcoin_mechanism": "BTC backing with Lombard consortium and chain-specific transfer infrastructure.",
+      "review_focus": "Consortium custody, supported-chain changes and redemption paths.",
+      "status": "changed",
+      "status_note": "Lombard docs report acquisition in October 2025; September 2026 chain support changes require separate review.",
+      "sources": [
+        {
+          "url": "https://docs.lombard.finance/learn/products/assets",
+          "type": "primary",
+          "checked": "2026-09-25"
+        },
+        {
+          "url": "https://docs.lombard.finance/use/bridging",
+          "type": "primary",
+          "checked": "2026-09-25",
+          "title": "September 2026 chain support and bridging"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "btcb",
+      "name": "BTCB",
+      "category": "bitcoin-assets",
+      "website": "https://www.bnbchain.org/en/blog/empowering-btcfi-on-bnb-chain-the-role-of-btcb-in-building-trust",
+      "networks": [
+        "Bitcoin",
+        "BNB Chain"
+      ],
+      "kind": "asset",
+      "description": "Binance-issued Bitcoin representation used in the BNB Chain ecosystem.",
+      "bitcoin_mechanism": "Custodial BTC backing and destination-chain tokens.",
+      "review_focus": "Binance custody, reserve verification, redemption and smart-contract permissions.",
+      "status": "documented",
+      "status_note": "BTCB is distinct from native BTC and from unrelated similarly named tokens.",
+      "sources": [
+        {
+          "url": "https://www.bnbchain.org/en/blog/empowering-btcfi-on-bnb-chain-the-role-of-btcb-in-building-trust",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "cbbtc",
+      "name": "cbBTC",
+      "category": "bitcoin-assets",
+      "website": "https://www.coinbase.com/cbbtc",
+      "networks": [
+        "Bitcoin",
+        "Ethereum",
+        "Base",
+        "Multichain"
+      ],
+      "kind": "asset",
+      "description": "Coinbase-backed BTC representation for on-chain collateral and trading.",
+      "bitcoin_mechanism": "BTC held by Coinbase with tokens issued on supported networks.",
+      "review_focus": "Custody, issuer controls, redemption eligibility and chain-specific bridge design.",
+      "status": "documented",
+      "status_note": "The cited technical assessment distinguishes canonical cbBTC from a bridged deployment.",
+      "sources": [
+        {
+          "url": "https://governance.aave.com/t/coinbase-wrapped-btc-cbbtc-on-aave-monad-assessments/25257",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "ckbtc",
+      "name": "ckBTC",
+      "category": "bitcoin-assets",
+      "website": "https://dashboard.internetcomputer.org/bitcoin",
+      "networks": [
+        "Bitcoin",
+        "Internet Computer"
+      ],
+      "kind": "asset",
+      "description": "Chain-key BTC representation managed by Internet Computer canisters.",
+      "bitcoin_mechanism": "Threshold signatures, ICP subnets and minter/ledger canisters.",
+      "review_focus": "ICP consensus and governance, canister upgrades, transaction screening and redemption.",
+      "status": "documented",
+      "status_note": "No traditional single custodian does not mean no additional trust assumptions.",
+      "sources": [
+        {
+          "url": "https://docs.internetcomputer.org/concepts/chain-fusion/bitcoin/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "clementine-and-cbtc",
+      "name": "Clementine and cBTC",
+      "category": "bitcoin-assets",
+      "website": "https://citrea.xyz/",
+      "networks": [
+        "Bitcoin",
+        "Citrea"
+      ],
+      "kind": "bridge",
+      "description": "Citrea's bridge and BTC representation for its application environment.",
+      "bitcoin_mechanism": "BitVM-based optimistic verification in the documented bridge design.",
+      "review_focus": "Operator and challenger requirements, withdrawal liquidity and dispute windows.",
+      "status": "documented",
+      "status_note": "The whitepaper specifies an honest watchtower assumption within a permissioned set; implementation and deployed configuration require separate review.",
+      "sources": [
+        {
+          "url": "https://citrea.xyz/clementine_whitepaper.pdf",
+          "type": "primary",
+          "checked": "2026-09-25",
+          "title": "Clementine whitepaper"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "fbtc",
+      "name": "FBTC",
+      "category": "bitcoin-assets",
+      "website": "https://fbtc.com/",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "asset",
+      "description": "Bitcoin representation connecting custodial BTC reserves to destination-chain tokens.",
+      "bitcoin_mechanism": "On-chain contracts combined with off-chain custody operations.",
+      "review_focus": "Custody policy, pausing, upgrades and safety-committee emergency powers.",
+      "status": "documented",
+      "status_note": "Distinct from the FBTC ticker used by a Bitcoin ETF.",
+      "sources": [
+        {
+          "url": "https://docs.fbtc.com/security/risk-management/custody",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "l-btc",
+      "name": "L-BTC",
+      "category": "bitcoin-assets",
+      "website": "https://www.liquid.net/",
+      "networks": [
+        "Bitcoin",
+        "Liquid"
+      ],
+      "kind": "asset",
+      "description": "Liquid's Bitcoin-pegged settlement asset.",
+      "bitcoin_mechanism": "BTC locked under the Liquid federation's peg arrangements.",
+      "review_focus": "Federation behavior, peg-out access and network liveness.",
+      "status": "documented",
+      "status_note": "Holding L-BTC is not identical to holding a Bitcoin L1 UTXO.",
+      "sources": [
+        {
+          "url": "https://www.liquid.net/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "sbtc",
+      "name": "sBTC",
+      "category": "bitcoin-assets",
+      "website": "https://www.stacks.co/sbtc",
+      "networks": [
+        "Bitcoin",
+        "Stacks"
+      ],
+      "kind": "asset",
+      "description": "BTC-backed asset used by applications on Stacks.",
+      "bitcoin_mechanism": "Bitcoin deposits controlled through the sBTC signer system.",
+      "review_focus": "Signer threshold, withdrawals, upgrades and application-level risk.",
+      "status": "documented",
+      "status_note": "Distinct from Synthetix's historical sBTC ticker.",
+      "sources": [
+        {
+          "url": "https://www.stacks.co/sbtc",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "strkbtc",
+      "name": "strkBTC",
+      "category": "bitcoin-assets",
+      "website": "https://www.starknet.io/blog/strkbtc-user-guide/",
+      "networks": [
+        "Bitcoin",
+        "Starknet"
+      ],
+      "kind": "asset",
+      "description": "Bitcoin representation on Starknet with optional shielded balances and staking integrations.",
+      "bitcoin_mechanism": "Bitcoin bridging plus Starknet token and privacy infrastructure.",
+      "review_focus": "Bridge backing, shielding controls, recovery and staking dependencies.",
+      "status": "documented",
+      "status_note": "Privacy features do not remove the bridge's custody assumptions.",
+      "sources": [
+        {
+          "url": "https://www.starknet.io/blog/strkbtc-user-guide/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "tbtc",
+      "name": "tBTC",
+      "category": "bitcoin-assets",
+      "website": "https://www.threshold.network/",
+      "networks": [
+        "Bitcoin",
+        "Ethereum",
+        "Multichain"
+      ],
+      "kind": "asset",
+      "description": "Threshold Network's Bitcoin bridge asset for DeFi.",
+      "bitcoin_mechanism": "Threshold-signing custody rather than a single traditional custodian.",
+      "review_focus": "Signer thresholds, bridge governance, redemption and destination-chain contracts.",
+      "status": "documented",
+      "status_note": "Review the current tBTC version, not assumptions from the earlier v1 system.",
+      "sources": [
+        {
+          "url": "https://docs.threshold.network/tbtc-v2",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "wbtc",
+      "name": "WBTC",
+      "category": "bitcoin-assets",
+      "website": "https://www.wbtc.network/",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "asset",
+      "description": "Custodially backed Bitcoin representation used across DeFi markets.",
+      "bitcoin_mechanism": "BTC reserves, authorized merchants and token contracts on destination chains.",
+      "review_focus": "Custodian arrangements, mint and redemption access, freeze controls and additional bridge layers.",
+      "status": "documented",
+      "status_note": "A BTC wrapper, not a yield product by itself.",
+      "sources": [
+        {
+          "url": "https://www.wbtc.network/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "babylon-bitcoin-staking",
+      "name": "Babylon Bitcoin Staking",
+      "category": "staking",
+      "website": "https://babylonlabs.io/",
+      "networks": [
+        "Bitcoin",
+        "Babylon"
+      ],
+      "kind": "protocol",
+      "description": "Bitcoin collateral used to provide security to external proof-of-stake systems.",
+      "bitcoin_mechanism": "Bitcoin staking scripts and finality-provider delegation.",
+      "review_focus": "Slashing conditions, unbonding time, covenant rules and reward denomination.",
+      "status": "documented",
+      "status_note": "This does not change Bitcoin consensus from proof of work to proof of stake.",
+      "sources": [
+        {
+          "url": "https://babylonlabs.io/institutional-staking",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "core",
+      "name": "Core",
+      "category": "staking",
+      "website": "https://coredao.org/",
+      "networks": [
+        "Bitcoin",
+        "Core"
+      ],
+      "kind": "network",
+      "description": "EVM network with BTC timelock-based delegation and CORE rewards.",
+      "bitcoin_mechanism": "Bitcoin CLTV timelocks help elect Core validators.",
+      "review_focus": "Lock duration, validator performance, CORE exposure and separate risks when using Core DeFi.",
+      "status": "documented",
+      "status_note": "Official description distinguishes BTC timelocking from bridging; dual staking also requires CORE.",
+      "sources": [
+        {
+          "url": "https://coredao.org/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "endur",
+      "name": "Endur",
+      "category": "staking",
+      "website": "https://www.endur.fi/",
+      "networks": [
+        "Starknet"
+      ],
+      "kind": "protocol",
+      "description": "Liquid staking infrastructure for BTC representations and STRK on Starknet.",
+      "bitcoin_mechanism": "Receipt tokens backed by product-specific staking positions.",
+      "review_focus": "Underlying wrapper, staking contracts, token exchange rate and redemption.",
+      "status": "mainnet-announced",
+      "status_note": "Official site states Starknet mainnet availability; BTC and STRK products are distinct.",
+      "sources": [
+        {
+          "url": "https://www.endur.fi/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "pell-network",
+      "name": "Pell Network",
+      "category": "staking",
+      "website": "https://pell.network/",
+      "networks": [
+        "Multichain"
+      ],
+      "kind": "protocol",
+      "description": "Restaking platform using BTC representations and liquid staking derivatives for shared security.",
+      "bitcoin_mechanism": "Restaked collateral securing decentralized validated services.",
+      "review_focus": "Underlying wrapper custody, operators, service-specific slashing and reward tokens.",
+      "status": "documented",
+      "status_note": "Terms depend on the particular asset and service selected.",
+      "sources": [
+        {
+          "url": "https://docs.pell.network/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "pumpbtc",
+      "name": "PumpBTC",
+      "category": "staking",
+      "website": "https://github.com/pumpbtc/pumpbtc-contract",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "protocol",
+      "description": "Liquid Bitcoin staking contracts minting pumpBTC from supported BTC representations.",
+      "bitcoin_mechanism": "Operator-mediated conversion and Babylon staking in the published contract description.",
+      "review_focus": "Operator custody, wrapper backing, upgrade roles and unstaking terms.",
+      "status": "status-unclear",
+      "status_note": "Code reviewed; current user-facing service availability was not established.",
+      "sources": [
+        {
+          "url": "https://github.com/pumpbtc/pumpbtc-contract",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "satlayer",
+      "name": "SatLayer",
+      "category": "staking",
+      "website": "https://docs.satlayer.xyz/",
+      "networks": [
+        "Babylon",
+        "Multichain"
+      ],
+      "kind": "protocol",
+      "description": "Shared-security contracts on Babylon for Bitcoin Validated Services.",
+      "bitcoin_mechanism": "Wrapped BTC or BTC liquid staking tokens allocated to service security.",
+      "review_focus": "Underlying assets, operators, contracts and whether a given vault enables slashing.",
+      "status": "documented",
+      "status_note": "Do not assume every displayed vault has the same slashing configuration.",
+      "sources": [
+        {
+          "url": "https://docs.satlayer.xyz/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "stacking-dao",
+      "name": "Stacking DAO",
+      "category": "staking",
+      "website": "https://www.stackingdao.com/",
+      "networks": [
+        "Stacks",
+        "Bitcoin"
+      ],
+      "kind": "protocol",
+      "description": "Liquid staking products for BTC and STX, including stBTC, stSTX and stSTXbtc.",
+      "bitcoin_mechanism": "Stacks staking mechanisms and liquid receipt tokens.",
+      "review_focus": "Asset identity, signer or contract dependencies, redemption and yield source.",
+      "status": "documented",
+      "status_note": "Current homepage offers BTC/sBTC deposits into stBTC; older STX-only descriptions are incomplete.",
+      "sources": [
+        {
+          "url": "https://www.stackingdao.com/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "starknet-bitcoin-staking",
+      "name": "Starknet Bitcoin staking",
+      "category": "staking",
+      "website": "https://www.starknet.io/staking/",
+      "networks": [
+        "Starknet"
+      ],
+      "kind": "protocol",
+      "description": "Staking supported tokenized BTC on Starknet to receive STRK rewards.",
+      "bitcoin_mechanism": "BTC wrapper tokens locked in Starknet staking contracts.",
+      "review_focus": "Wrapper and bridge security, validator rules, unbonding and STRK price exposure.",
+      "status": "documented",
+      "status_note": "Starknet is an Ethereum L2; this is not staking an unwrapped Bitcoin L1 UTXO.",
+      "sources": [
+        {
+          "url": "https://www.starknet.io/staking/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "aave",
+      "name": "Aave",
+      "category": "lending",
+      "website": "https://aave.com/",
+      "networks": [
+        "Ethereum",
+        "Multichain"
+      ],
+      "kind": "application",
+      "description": "Money markets supporting Bitcoin representations as collateral or supplied assets in selected markets.",
+      "bitcoin_mechanism": "Destination-chain contracts using tokens such as WBTC and cbBTC.",
+      "review_focus": "Market-specific collateral factors, oracles, liquidations and wrapper custody.",
+      "status": "documented",
+      "status_note": "BTC exposure on Aave generally adds wrapper and chain dependencies; separate native-collateral pilots need separate review.",
+      "sources": [
+        {
+          "url": "https://aave.com/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "avalon-labs",
+      "name": "Avalon Labs",
+      "category": "lending",
+      "website": "https://www.avalonfinance.xyz/",
+      "networks": [
+        "Multichain"
+      ],
+      "kind": "application",
+      "description": "Bitcoin-focused on-chain money markets, USDa borrowing and separate institutional credit products.",
+      "bitcoin_mechanism": "Product-specific smart contracts and, for CeDeFi loans, custodial collateral.",
+      "review_focus": "Identify on-chain versus institutional terms, custody, rates and liquidation controls.",
+      "status": "documented",
+      "status_note": "The site's On-Chain and CeDeFi products are separate trust models.",
+      "sources": [
+        {
+          "url": "https://www.avalonfinance.xyz/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "babylon-trustless-bitcoin-vaults",
+      "name": "Babylon Trustless Bitcoin Vaults",
+      "category": "lending",
+      "website": "https://babylonlabs.io/",
+      "networks": [
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "kind": "infrastructure",
+      "description": "Native BTC collateral infrastructure targeting applications such as external-chain borrowing.",
+      "bitcoin_mechanism": "BTCVault construction with external recognition of Bitcoin collateral.",
+      "review_focus": "Actual testnet/mainnet stage, liquidation path, proof system and recovery conditions.",
+      "status": "testnet",
+      "status_note": "Homepage's TBV access link points to a testnet app; the Aave integration is not labeled as a verified live lending market here.",
+      "sources": [
+        {
+          "url": "https://babylonlabs.io/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "debifi",
+      "name": "Debifi",
+      "category": "lending",
+      "website": "https://debifi.com/",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "application",
+      "description": "Connects Bitcoin borrowers with institutional lenders for fiat and stablecoin loans.",
+      "bitcoin_mechanism": "Dedicated 3-of-4 Bitcoin multisignature collateral escrow.",
+      "review_focus": "Key-holder roles, lender terms, identity checks and liquidation processes.",
+      "status": "documented",
+      "status_note": "Institutional lending marketplace; not an autonomous Bitcoin L1 money market.",
+      "sources": [
+        {
+          "url": "https://debifi.com/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "firefish",
+      "name": "Firefish",
+      "category": "lending",
+      "website": "https://firefish.io/",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "application",
+      "description": "Marketplace for fiat or stablecoin loans secured by Bitcoin.",
+      "bitcoin_mechanism": "On-chain multisignature escrow with off-chain loan settlement.",
+      "review_focus": "Escrow roles, default procedures, liquidation execution and legal counterparties.",
+      "status": "documented",
+      "status_note": "Combines Bitcoin collateral infrastructure with contractual lending relationships.",
+      "sources": [
+        {
+          "url": "https://docs.firefish.io/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "fluid",
+      "name": "Fluid",
+      "category": "lending",
+      "website": "https://fluid.io/",
+      "networks": [
+        "Ethereum",
+        "Multichain"
+      ],
+      "kind": "application",
+      "description": "Liquidity and lending infrastructure with WBTC-related markets.",
+      "bitcoin_mechanism": "Smart-contract vaults and a shared liquidity architecture.",
+      "review_focus": "Liquidations, oracle behavior, contract architecture and BTC wrapper custody.",
+      "status": "documented",
+      "status_note": "The cited proposal establishes WBTC market design; current live market parameters need app verification.",
+      "sources": [
+        {
+          "url": "https://gov.fluid.io/t/launch-wbtc-markets-on-fluid/787",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "granite",
+      "name": "Granite",
+      "category": "lending",
+      "website": "https://www.granite.world/",
+      "networks": [
+        "Stacks"
+      ],
+      "kind": "application",
+      "description": "Bitcoin-backed borrowing with isolated collateral and partial liquidations.",
+      "bitcoin_mechanism": "sBTC collateral in Stacks smart contracts.",
+      "review_focus": "sBTC peg, price oracles, liquidation execution and contract controls.",
+      "status": "documented",
+      "status_note": "The protocol says posted collateral is not re-lent; that does not remove liquidation risk.",
+      "sources": [
+        {
+          "url": "https://www.granite.world/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "lava",
+      "name": "Lava",
+      "category": "lending",
+      "website": "https://www.lava.xyz/",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "application",
+      "description": "Bitcoin-collateralized dollar borrowing and related spending services.",
+      "bitcoin_mechanism": "BTC collateral arrangements linked to external loan and payment infrastructure.",
+      "review_focus": "Contract and key control, liquidation, funding counterparties and card eligibility.",
+      "status": "documented",
+      "status_note": "Self-custody marketing is not used here as an independent security certification.",
+      "sources": [
+        {
+          "url": "https://www.lava.xyz/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "lend-at-hodl-hodl",
+      "name": "Lend at Hodl Hodl",
+      "category": "lending",
+      "website": "https://lend.hodlhodl.com/",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "application",
+      "description": "Marketplace for crypto loans secured by Bitcoin multisignature escrow.",
+      "bitcoin_mechanism": "BTC collateral in a multisig contract; loan currency moves separately.",
+      "review_focus": "Counterparty performance, dispute resolution, LTV thresholds and contract recovery.",
+      "status": "documented",
+      "status_note": "Lenders need to inspect the loan currency; BTC collateral does not mean BTC-denominated lending.",
+      "sources": [
+        {
+          "url": "https://lend.hodlhodl.com/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "lendasat",
+      "name": "Lendasat",
+      "category": "lending",
+      "website": "https://lendasat.com/docs",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "application",
+      "description": "Peer-to-peer loans with Bitcoin collateral and fiat or stablecoin settlement.",
+      "bitcoin_mechanism": "2-of-3 multisignature collateral with a dispute-resolution participant.",
+      "review_focus": "Counterparty repayment, dispute process, liquidation and recovery tools.",
+      "status": "documented",
+      "status_note": "Shared control is different from unilateral self-custody.",
+      "sources": [
+        {
+          "url": "https://lendasat.com/docs/p2p-loans/faq",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "liquidium",
+      "name": "Liquidium",
+      "category": "lending",
+      "website": "https://liquidium.wtf/",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "application",
+      "description": "BTC loans secured by supported Ordinals or Runes, with lenders exposed to the collateral on default.",
+      "bitcoin_mechanism": "Bitcoin-native collateral contracts for the Bitcoin product.",
+      "review_focus": "Repayment deadlines, collectible valuation, collateral transfer and illiquidity.",
+      "status": "documented",
+      "status_note": "The site also has another-chain product; this listing covers Bitcoin loans.",
+      "sources": [
+        {
+          "url": "https://liquidium.wtf/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "morpho",
+      "name": "Morpho",
+      "category": "lending",
+      "website": "https://morpho.org/",
+      "networks": [
+        "Ethereum",
+        "Base",
+        "Multichain"
+      ],
+      "kind": "application",
+      "description": "Isolated lending markets and curated vaults, including cbBTC collateral markets.",
+      "bitcoin_mechanism": "Token collateral in market-specific smart contracts.",
+      "review_focus": "Oracle selection, liquidation parameters, wrapper custody and vault-curator allocation.",
+      "status": "documented",
+      "status_note": "A market can exist permissionlessly without being endorsed by Morpho or this list.",
+      "sources": [
+        {
+          "url": "https://morpho.org/blog/cbbtc-lending-markets-deployed-on-morpho",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "sovryn",
+      "name": "Sovryn",
+      "category": "lending",
+      "website": "https://sovryn.app/",
+      "networks": [
+        "Rootstock"
+      ],
+      "kind": "application",
+      "description": "Rootstock lending, collateralized borrowing and trading suite.",
+      "bitcoin_mechanism": "RBTC and other supported assets in smart contracts.",
+      "review_focus": "Rootstock peg, contract governance, oracles and liquidation rules.",
+      "status": "documented",
+      "status_note": "Includes several subprotocols with different economics.",
+      "sources": [
+        {
+          "url": "https://sovryn.app/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "venus",
+      "name": "Venus",
+      "category": "lending",
+      "website": "https://venus.io/",
+      "networks": [
+        "BNB Chain",
+        "Multichain"
+      ],
+      "kind": "application",
+      "description": "Money-market protocol with BTCB and other Bitcoin-related collateral markets.",
+      "bitcoin_mechanism": "Wrapped assets in destination-chain lending contracts.",
+      "review_focus": "Wrapper backing, oracle configuration, liquidations and governance.",
+      "status": "documented",
+      "status_note": "Supported assets differ by pool and chain; check current limits and pause flags.",
+      "sources": [
+        {
+          "url": "https://docs-v4.venus.io/risk",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "vesu",
+      "name": "Vesu",
+      "category": "lending",
+      "website": "https://vesu.xyz/",
+      "networks": [
+        "Starknet"
+      ],
+      "kind": "application",
+      "description": "Starknet lending pools and curated vault infrastructure within the Bitcoin staking ecosystem.",
+      "bitcoin_mechanism": "Pool-specific collateral contracts on Starknet.",
+      "review_focus": "Accepted BTC representation, oracle, liquidation and curator configuration.",
+      "status": "documented",
+      "status_note": "Endur lists Vesu as an integration; no individual BTC market or rate is certified here.",
+      "sources": [
+        {
+          "url": "https://docs.vesu.xyz/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "zest-protocol",
+      "name": "Zest Protocol",
+      "category": "lending",
+      "website": "https://www.zestprotocol.com/",
+      "networks": [
+        "Stacks",
+        "Bitcoin"
+      ],
+      "kind": "application",
+      "description": "Stacks lending markets and a separately described Bitcoin Collateral Vault initiative.",
+      "bitcoin_mechanism": "sBTC-based lending; proposed/native-vault paths have different mechanics.",
+      "review_focus": "Liquidations, price oracles, sBTC signers and the deployment stage of each vault product.",
+      "status": "documented",
+      "status_note": "Existing Stacks markets must not be conflated with new vault architecture.",
+      "sources": [
+        {
+          "url": "https://www.zestprotocol.com/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "arkadiko",
+      "name": "Arkadiko",
+      "category": "stablecoins",
+      "website": "https://arkadiko.finance/",
+      "networks": [
+        "Stacks"
+      ],
+      "kind": "application",
+      "description": "Stablecoin and DeFi system whose USDA vaults are described as STX-collateralized.",
+      "bitcoin_mechanism": "Stacks collateral contracts and oracle-dependent debt positions.",
+      "review_focus": "STX volatility, collateral ratios, liquidations and contract controls.",
+      "status": "documented",
+      "status_note": "Bitcoin-ecosystem inclusion does not mean USDA is directly backed by BTC.",
+      "sources": [
+        {
+          "url": "https://arkadiko.finance/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "btcfi-bifrost",
+      "name": "BTCFi (Bifrost)",
+      "category": "stablecoins",
+      "website": "https://www.btcfi.one/",
+      "networks": [
+        "Bitcoin",
+        "Bifrost",
+        "Base"
+      ],
+      "kind": "application",
+      "description": "Bitcoin-collateralized borrowing service and related BtcUSD ecosystem.",
+      "bitcoin_mechanism": "Product-specific collateral arrangements supporting native BTC and BTC representations.",
+      "review_focus": "Collateral custody, supported routes, liquidation rules and stablecoin redemption.",
+      "status": "documented",
+      "status_note": "A specific product brand, distinct from the general term BTCfi; the source lists BTC, WBTC, BTCB and cbBTC collateral.",
+      "sources": [
+        {
+          "url": "https://ecosystem.btcfi.one/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "ctusd",
+      "name": "ctUSD",
+      "category": "stablecoins",
+      "website": "https://citrea.xyz/",
+      "networks": [
+        "Citrea"
+      ],
+      "kind": "asset",
+      "description": "Dollar stablecoin within the Citrea ecosystem described as backed by cash and short-term Treasury bills.",
+      "bitcoin_mechanism": "External fiat reserves and tokens on Citrea.",
+      "review_focus": "Issuer, reserves, redemption eligibility and chain risk.",
+      "status": "documented",
+      "status_note": "Not BTC-collateralized despite use in Bitcoin capital markets.",
+      "sources": [
+        {
+          "url": "https://citrea.xyz/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "ducat-unit",
+      "name": "Ducat / UNIT",
+      "category": "stablecoins",
+      "website": "https://docs.ducatprotocol.com/",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "protocol",
+      "description": "BTC-backed stablecoin design using collateral vaults and MPC-coordinated rules.",
+      "bitcoin_mechanism": "Native BTC collateral plus external guardians, oracles and protocol nodes.",
+      "review_focus": "Guardian/signing assumptions, liquidation path, oracle integrity and deployment stage.",
+      "status": "documented",
+      "status_note": "BTC-native branding is not a claim that Bitcoin alone enforces every stablecoin rule.",
+      "sources": [
+        {
+          "url": "https://docs.ducatprotocol.com/how-ducat-works/vaults",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "hermetica",
+      "name": "Hermetica",
+      "category": "stablecoins",
+      "website": "https://www.stacks.co/bitcoin-native-finance",
+      "networks": [
+        "Stacks",
+        "Bitcoin"
+      ],
+      "kind": "application",
+      "description": "USDh synthetic-dollar product and hBTC Bitcoin yield strategies.",
+      "bitcoin_mechanism": "Strategy-managed financial exposure delivered through ecosystem assets.",
+      "review_focus": "Hedging and custody arrangements, counterparties, liquidity and product-specific redemption.",
+      "status": "ecosystem-listed",
+      "status_note": "Included from Stacks' official ecosystem report; current detailed product mechanics need direct-document review.",
+      "sources": [
+        {
+          "url": "https://www.stacks.co/blog/q1-2026-snapshot",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "mezo",
+      "name": "Mezo",
+      "category": "stablecoins",
+      "website": "https://mezo.org/",
+      "networks": [
+        "Bitcoin",
+        "Mezo"
+      ],
+      "kind": "application",
+      "description": "Bitcoin finance platform with BTC-backed MUSD borrowing and yield-vault access.",
+      "bitcoin_mechanism": "Bitcoin-linked collateral on Mezo and application-specific debt/vault contracts.",
+      "review_focus": "Collateral bridge, liquidation and redemption rules; vaults add curator risk.",
+      "status": "documented",
+      "status_note": "MUSD's dollar target is distinct from holding BTC; Upshift-powered vaults are a separate product.",
+      "sources": [
+        {
+          "url": "https://mezo.org/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "money-on-chain",
+      "name": "Money On Chain",
+      "category": "stablecoins",
+      "website": "https://moneyonchain.com/",
+      "networks": [
+        "Rootstock"
+      ],
+      "kind": "application",
+      "description": "DOC dollar exposure and BPRO Bitcoin exposure within a shared collateral system.",
+      "bitcoin_mechanism": "Bitcoin-linked collateral on Rootstock with risk allocated between token classes.",
+      "review_focus": "RBTC peg, collateral model, oracles and BPRO exposure.",
+      "status": "documented",
+      "status_note": "BPRO is a risk-bearing product, not a plain BTC deposit.",
+      "sources": [
+        {
+          "url": "https://moneyonchain.com/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "sovryn-zero",
+      "name": "Sovryn Zero",
+      "category": "stablecoins",
+      "website": "https://sovryn.com/zero",
+      "networks": [
+        "Rootstock"
+      ],
+      "kind": "application",
+      "description": "BTC-backed stablecoin borrowing within the Sovryn ecosystem.",
+      "bitcoin_mechanism": "RBTC collateral, stablecoin debt and a liquidation stability pool.",
+      "review_focus": "Origination fees, redemptions, collateral ratio and liquidation.",
+      "status": "documented",
+      "status_note": "The page includes DLLR and older ZUSD language; verify the current app and docs before interpreting terms.",
+      "sources": [
+        {
+          "url": "https://sovryn.com/zero",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "alex",
+      "name": "ALEX",
+      "category": "trading",
+      "website": "https://alexlab.co/",
+      "networks": [
+        "Stacks"
+      ],
+      "kind": "application",
+      "description": "Stacks DeFi suite with liquidity and exchange functionality.",
+      "bitcoin_mechanism": "Stacks contracts and associated ecosystem assets.",
+      "review_focus": "Incident history, paused functions, contract versions and current recovery information.",
+      "status": "ecosystem-listed",
+      "status_note": "Ecosystem listing establishes identity, not present operational health.",
+      "sources": [
+        {
+          "url": "https://www.stacks.co/explore/ecosystem",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "bitflow",
+      "name": "Bitflow",
+      "category": "trading",
+      "website": "https://www.bitflow.finance/",
+      "networks": [
+        "Stacks"
+      ],
+      "kind": "application",
+      "description": "Exchange and liquidity infrastructure for Stacks assets including sBTC pairs.",
+      "bitcoin_mechanism": "Stacks smart-contract liquidity pools.",
+      "review_focus": "sBTC backing, pool design, price ranges, impermanent loss and contract risk.",
+      "status": "ecosystem-listed",
+      "status_note": "Official Stacks source describes sBTC/USDCx liquidity activity.",
+      "sources": [
+        {
+          "url": "https://www.stacks.co/blog/stacks-90-day-defi-incentive-program-announced-with-zest-and-bitflow",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "curve",
+      "name": "Curve",
+      "category": "trading",
+      "website": "https://curve.finance/",
+      "networks": [
+        "Ethereum",
+        "Multichain"
+      ],
+      "kind": "application",
+      "description": "Liquidity pools and related DeFi infrastructure used with tokenized Bitcoin.",
+      "bitcoin_mechanism": "Automated market makers on destination chains.",
+      "review_focus": "Pool composition, wrapper depegs, liquidity, impermanent loss and contracts.",
+      "status": "ecosystem-listed",
+      "status_note": "WBTC's official site lists Curve among supported trading venues; verify the particular pool.",
+      "sources": [
+        {
+          "url": "https://www.wbtc.network/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "flashnet",
+      "name": "Flashnet",
+      "category": "trading",
+      "website": "https://www.flashnet.xyz/",
+      "networks": [
+        "Bitcoin",
+        "Spark",
+        "Multichain"
+      ],
+      "kind": "infrastructure",
+      "description": "Bitcoin trading and payment orchestration infrastructure with native-asset routing.",
+      "bitcoin_mechanism": "Route-dependent exchange, bridge and settlement integrations.",
+      "review_focus": "Route composition, provider trust, underlying payment layer and settlement recovery.",
+      "status": "documented",
+      "status_note": "Spark identifies Flashnet as an ecosystem integration; route guarantees should be checked individually.",
+      "sources": [
+        {
+          "url": "https://www.flashnet.xyz/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "juiceswap",
+      "name": "JuiceSwap",
+      "category": "trading",
+      "website": "https://bapp.juiceswap.com/",
+      "networks": [
+        "Citrea"
+      ],
+      "kind": "application",
+      "description": "Exchange listed among Citrea's Bitcoin applications.",
+      "bitcoin_mechanism": "Citrea application contracts and assets.",
+      "review_focus": "Pool deployment, liquidity, contract review and bridge dependencies.",
+      "status": "ecosystem-listed",
+      "status_note": "Listed from the network's official directory; no execution testing performed.",
+      "sources": [
+        {
+          "url": "https://citrea.xyz/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "ln-markets",
+      "name": "LN Markets",
+      "category": "trading",
+      "website": "https://lnmarkets.com/",
+      "networks": [
+        "Bitcoin",
+        "Lightning"
+      ],
+      "kind": "application",
+      "description": "Bitcoin derivatives interface using Lightning and external exchange liquidity.",
+      "bitcoin_mechanism": "Lightning funding combined with platform-managed trading infrastructure.",
+      "review_focus": "Margin liquidation, platform custody, execution and exchange counterparties.",
+      "status": "documented",
+      "status_note": "Lightning deposits do not turn a derivatives venue into a self-custodial protocol.",
+      "sources": [
+        {
+          "url": "https://lnmarkets.com/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "satsuma",
+      "name": "Satsuma",
+      "category": "trading",
+      "website": "https://www.satsuma.exchange/",
+      "networks": [
+        "Citrea"
+      ],
+      "kind": "application",
+      "description": "Exchange listed in Citrea's application ecosystem.",
+      "bitcoin_mechanism": "Citrea application contracts and assets.",
+      "review_focus": "Pool deployment, liquidity, contract review and cBTC bridge dependencies.",
+      "status": "ecosystem-listed",
+      "status_note": "Identity and category confirmed by Citrea; detailed product due diligence remains open.",
+      "sources": [
+        {
+          "url": "https://citrea.xyz/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "sideswap",
+      "name": "SideSwap",
+      "category": "trading",
+      "website": "https://sideswap.io/",
+      "networks": [
+        "Liquid"
+      ],
+      "kind": "application",
+      "description": "Peer-to-peer swaps and settlement tools for Liquid assets.",
+      "bitcoin_mechanism": "Liquid asset transactions and L-BTC peg access.",
+      "review_focus": "Liquid federation, individual asset issuers and market liquidity.",
+      "status": "documented",
+      "status_note": "Non-custodial trading does not remove the underlying Liquid peg assumptions.",
+      "sources": [
+        {
+          "url": "https://sideswap.io/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "unisat",
+      "name": "UniSat",
+      "category": "trading",
+      "website": "https://unisat.io/",
+      "networks": [
+        "Bitcoin",
+        "Fractal"
+      ],
+      "kind": "application",
+      "description": "Wallet, marketplace and data tools for Bitcoin asset protocols.",
+      "bitcoin_mechanism": "Ordinal, BRC-20, Rune and Alkane-aware transaction and indexing systems.",
+      "review_focus": "Asset-indexer correctness, signing, UTXO selection and marketplace liquidity.",
+      "status": "documented",
+      "status_note": "Features on Fractal use a different network from Bitcoin mainnet.",
+      "sources": [
+        {
+          "url": "https://unisat.io/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "uniswap",
+      "name": "Uniswap",
+      "category": "trading",
+      "website": "https://uniswap.org/",
+      "networks": [
+        "Ethereum",
+        "Multichain"
+      ],
+      "kind": "application",
+      "description": "General-purpose exchange infrastructure with tokenized BTC markets.",
+      "bitcoin_mechanism": "Version-specific automated market makers and, in v4, optional hooks.",
+      "review_focus": "Token authenticity, LP price ranges, wrapper risk and any pool-specific hook.",
+      "status": "ecosystem-listed",
+      "status_note": "BTC trading uses a representation such as WBTC, not native Bitcoin settlement.",
+      "sources": [
+        {
+          "url": "https://www.wbtc.network/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "bedrock",
+      "name": "Bedrock",
+      "category": "yield",
+      "website": "https://www.bedrock.technology/",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "protocol",
+      "description": "uniBTC and brBTC alongside a broader Bitcoin yield-vault product suite.",
+      "bitcoin_mechanism": "BTC representations routed into product-specific strategies.",
+      "review_focus": "Custody, token backing, contracts and off-chain strategy dependencies.",
+      "status": "changed",
+      "status_note": "Current site describes Bedrock 2.0, including lending, derivatives and RWA strategies beyond staking.",
+      "sources": [
+        {
+          "url": "https://www.bedrock.technology/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "lombard-lbtc",
+      "name": "Lombard LBTC",
+      "category": "yield",
+      "website": "https://docs.lombard.finance/use/lbtc",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "asset",
+      "description": "Yield-bearing BTC asset now tied to a Bitwise-managed covered-call strategy.",
+      "bitcoin_mechanism": "Custodied BTC backing and non-rebasing tokens with an exchange rate.",
+      "review_focus": "Options losses, counterparties, custody and redemption delays.",
+      "status": "changed",
+      "status_note": "Docs say Babylon backing ended in August 2026 and the new strategy started August 17; do not describe today's LBTC as simply a Babylon LST.",
+      "sources": [
+        {
+          "url": "https://docs.lombard.finance/learn/products/assets",
+          "type": "primary",
+          "checked": "2026-09-25"
+        },
+        {
+          "url": "https://docs.lombard.finance/use/lbtc",
+          "type": "primary",
+          "checked": "2026-09-25",
+          "title": "Current LBTC yield mechanics"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "lorenzo-protocol",
+      "name": "Lorenzo Protocol",
+      "category": "yield",
+      "website": "https://www.lorenzo-protocol.xyz/",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "protocol",
+      "description": "Bitcoin liquidity and asset-management infrastructure, including stBTC-related designs.",
+      "bitcoin_mechanism": "Tokenized BTC principal or yield exposure and strategy-specific backing.",
+      "review_focus": "Current product scope, custody, receipt-token rights and redemption availability.",
+      "status": "documented",
+      "status_note": "Public Bitcoin-liquidity documentation exists; current front-end availability is not certified.",
+      "sources": [
+        {
+          "url": "https://lorenzo-protocol.gitbook.io/docs/bitcoin-liquidity-layer",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "pendle",
+      "name": "Pendle",
+      "category": "yield",
+      "website": "https://www.pendle.finance/",
+      "networks": [
+        "Multichain"
+      ],
+      "kind": "application",
+      "description": "Yield tokenization and trading usable with supported Bitcoin yield assets.",
+      "bitcoin_mechanism": "Principal and yield claims on an underlying yield-bearing token.",
+      "review_focus": "Underlying protocol and wrapper risk, maturity, liquidity and yield-token decay.",
+      "status": "documented",
+      "status_note": "BTC market availability changes; inspect the specific underlying asset and expiry.",
+      "sources": [
+        {
+          "url": "https://www.pendle.finance/pendle",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "solv-protocol",
+      "name": "Solv Protocol",
+      "category": "yield",
+      "website": "https://solv.finance/",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "protocol",
+      "description": "SolvBTC representation, xSolvBTC yield exposure and managed BTC strategies.",
+      "bitcoin_mechanism": "Product-specific custody, reserve and strategy arrangements.",
+      "review_focus": "Backing composition, manager permissions, counterparties and redemption terms.",
+      "status": "documented",
+      "status_note": "SolvBTC, xSolvBTC and BTC+ should not be treated as identical products.",
+      "sources": [
+        {
+          "url": "https://solv.finance/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "spectra",
+      "name": "Spectra",
+      "category": "yield",
+      "website": "https://www.spectra.finance/",
+      "networks": [
+        "Multichain",
+        "Hemi"
+      ],
+      "kind": "application",
+      "description": "Permissionless yield markets and vault infrastructure, including Bitcoin-related ecosystem use.",
+      "bitcoin_mechanism": "Separate principal/yield claims and interest-rate markets.",
+      "review_focus": "Underlying backing, maturity, curator choices and secondary-market liquidity.",
+      "status": "documented",
+      "status_note": "Hemi is among the networks shown; each BTC market needs independent verification.",
+      "sources": [
+        {
+          "url": "https://www.spectra.finance/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "yieldbasis",
+      "name": "YieldBasis",
+      "category": "yield",
+      "website": "https://yieldbasis.com/",
+      "networks": [
+        "Ethereum"
+      ],
+      "kind": "protocol",
+      "description": "Liquidity strategy designed to offset impermanent loss for tokenized BTC and ETH.",
+      "bitcoin_mechanism": "Leveraged liquidity positions rather than Bitcoin consensus rewards.",
+      "review_focus": "Leverage, borrowing costs, rebalancing, wrapper backing and pool losses.",
+      "status": "documented",
+      "status_note": "The design's leverage is economically material; claims of eliminating IL do not eliminate all losses.",
+      "sources": [
+        {
+          "url": "https://docs.yieldbasis.com/pdf/mica-whitepaper.pdf",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "atomiq",
+      "name": "Atomiq",
+      "category": "swaps",
+      "website": "https://www.atomiq.exchange/",
+      "networks": [
+        "Bitcoin",
+        "Lightning",
+        "Solana",
+        "Starknet"
+      ],
+      "kind": "protocol",
+      "description": "Atomic swaps between Bitcoin and supported smart-contract chains.",
+      "bitcoin_mechanism": "Escrow contracts, Bitcoin light-client verification and refund paths.",
+      "review_focus": "Light-client implementation, swap expiry, smart contracts and counterparty liquidity.",
+      "status": "documented",
+      "status_note": "The site documents both on-chain Bitcoin and Lightning routes.",
+      "sources": [
+        {
+          "url": "https://www.atomiq.exchange/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "boltz",
+      "name": "Boltz",
+      "category": "swaps",
+      "website": "https://boltz.exchange/",
+      "networks": [
+        "Bitcoin",
+        "Lightning",
+        "Liquid",
+        "Rootstock",
+        "Arkade"
+      ],
+      "kind": "application",
+      "description": "Submarine and chain swaps across Bitcoin payment layers, with additional stablecoin routes.",
+      "bitcoin_mechanism": "Atomic-swap contracts and route-specific execution legs.",
+      "review_focus": "Refund backups, timeouts, fees and any extra DEX or bridge used by a route.",
+      "status": "documented",
+      "status_note": "Stablecoin routes can compose additional components beyond a basic BTC-to-Lightning swap.",
+      "sources": [
+        {
+          "url": "https://api.docs.boltz.exchange/lifecycle.html",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "chainflip",
+      "name": "Chainflip",
+      "category": "swaps",
+      "website": "https://chainflip.io/",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "protocol",
+      "description": "Native-asset cross-chain swaps with liquidity, Boost and lending products.",
+      "bitcoin_mechanism": "Validator MPC custody and cross-chain execution.",
+      "review_focus": "Validator security, custody, confirmation risk and product-specific lending terms.",
+      "status": "documented",
+      "status_note": "Swap, Boost and lending exposures have different risk profiles.",
+      "sources": [
+        {
+          "url": "https://chainflip.io/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "garden",
+      "name": "Garden",
+      "category": "swaps",
+      "website": "https://garden.finance/docs/",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "protocol",
+      "description": "Atomic-swap infrastructure and APIs connecting Bitcoin with other networks.",
+      "bitcoin_mechanism": "Chain-specific swap contracts and liquidity providers.",
+      "review_focus": "Timeouts, refund implementation, provider liquidity and destination-chain contracts.",
+      "status": "documented",
+      "status_note": "Swap contracts and supported chain routes are documented separately.",
+      "sources": [
+        {
+          "url": "https://docs.garden.finance/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "lendaswap",
+      "name": "LendaSwap",
+      "category": "swaps",
+      "website": "https://lendasat.com/docs",
+      "networks": [
+        "Bitcoin",
+        "Lightning",
+        "Arkade",
+        "Multichain"
+      ],
+      "kind": "application",
+      "description": "Bitcoin-to-stablecoin swaps associated with Lendasat.",
+      "bitcoin_mechanism": "Route-specific swaps using Bitcoin payment layers.",
+      "review_focus": "Exact route, timeout/recovery behavior and stablecoin issuer.",
+      "status": "documented",
+      "status_note": "Product directory describes Lightning and Arkade integration; distinct from Lendasat loans.",
+      "sources": [
+        {
+          "url": "https://lendasat.com/docs",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "thorchain",
+      "name": "THORChain",
+      "category": "swaps",
+      "website": "https://thorchain.org/",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "protocol",
+      "description": "Cross-chain exchange and liquidity infrastructure for native assets including BTC.",
+      "bitcoin_mechanism": "Threshold-controlled network vaults and pool-based exchange.",
+      "review_focus": "Validator economics, vault custody, pool exposure and network halts.",
+      "status": "documented",
+      "status_note": "Native-asset swaps still have network custody assumptions; distinguish swap pools from historical lending products.",
+      "sources": [
+        {
+          "url": "https://thorchain.org/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "amboss",
+      "name": "Amboss",
+      "category": "payments",
+      "website": "https://amboss.tech/",
+      "networks": [
+        "Bitcoin",
+        "Lightning"
+      ],
+      "kind": "infrastructure",
+      "description": "Bitcoin payment infrastructure and integration tooling.",
+      "bitcoin_mechanism": "Lightning-connected payment routes and receiving-wallet integrations.",
+      "review_focus": "Wallet custody choice, route support and service availability.",
+      "status": "documented",
+      "status_note": "Current homepage emphasizes payment APIs; legacy product names need separate verification.",
+      "sources": [
+        {
+          "url": "https://amboss.tech/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "arkade",
+      "name": "Arkade",
+      "category": "payments",
+      "website": "https://arkadeos.com/",
+      "networks": [
+        "Bitcoin",
+        "Ark"
+      ],
+      "kind": "infrastructure",
+      "description": "Ark-based toolkit for payments, programmable transaction flows and asset exchange.",
+      "bitcoin_mechanism": "Bitcoin transaction structures coordinated through Arkade.",
+      "review_focus": "Operator availability, committed recovery paths and implementation-specific assumptions.",
+      "status": "documented",
+      "status_note": "Homepage labels Intents as developer preview; do not treat every feature as production-ready.",
+      "sources": [
+        {
+          "url": "https://arkadeos.com/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "cashu",
+      "name": "Cashu",
+      "category": "payments",
+      "website": "https://cashu.space/",
+      "networks": [
+        "Bitcoin",
+        "Lightning"
+      ],
+      "kind": "protocol",
+      "description": "Open Chaumian ecash protocol with Bitcoin-linked mints and wallets.",
+      "bitcoin_mechanism": "Bearer claims issued by mints, commonly funded over Lightning.",
+      "review_focus": "Mint solvency, issuer trust and token loss or double spending.",
+      "status": "documented",
+      "status_note": "Each mint is its own trust relationship.",
+      "sources": [
+        {
+          "url": "https://cashu.space/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "fedimint",
+      "name": "Fedimint",
+      "category": "payments",
+      "website": "https://fedimint.org/",
+      "networks": [
+        "Bitcoin",
+        "Lightning"
+      ],
+      "kind": "protocol",
+      "description": "Federated ecash for Bitcoin payments and community custody.",
+      "bitcoin_mechanism": "Federation custody backing private ecash notes.",
+      "review_focus": "Guardian collusion, solvency, federation availability and exit liquidity.",
+      "status": "documented",
+      "status_note": "Privacy and distributed custody do not make ecash self-custodial BTC.",
+      "sources": [
+        {
+          "url": "https://fedimint.org/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "lightning-loop",
+      "name": "Lightning Loop",
+      "category": "payments",
+      "website": "https://docs.lightning.engineering/lightning-network-tools/loop",
+      "networks": [
+        "Bitcoin",
+        "Lightning"
+      ],
+      "kind": "application",
+      "description": "Submarine swaps for moving value between Lightning and on-chain Bitcoin.",
+      "bitcoin_mechanism": "HTLC-based swaps and refund conditions.",
+      "review_focus": "Fees, timeout handling, liquidity and transaction monitoring.",
+      "status": "documented",
+      "status_note": "Channel management service; not a passive yield product.",
+      "sources": [
+        {
+          "url": "https://docs.lightning.engineering/lightning-network-tools/loop",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "lightning-pool",
+      "name": "Lightning Pool",
+      "category": "payments",
+      "website": "https://docs.lightning.engineering/lightning-network-tools/pool",
+      "networks": [
+        "Lightning"
+      ],
+      "kind": "application",
+      "description": "Marketplace for leasing Lightning channel liquidity.",
+      "bitcoin_mechanism": "Bitcoin allocated to payment-channel capacity.",
+      "review_focus": "Channel demand, node uptime, lease terms, fees and operational costs.",
+      "status": "documented",
+      "status_note": "Liquidity fees are a different source of return from lending or staking.",
+      "sources": [
+        {
+          "url": "https://docs.lightning.engineering/lightning-network-tools/pool",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "mercury-layer",
+      "name": "Mercury Layer",
+      "category": "payments",
+      "website": "https://mercurylayer.com/",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "infrastructure",
+      "description": "Statechain implementation using blinded co-signing and key updates.",
+      "bitcoin_mechanism": "UTXO ownership transfers supported by a key-share service.",
+      "review_focus": "Server key deletion/update assumptions, backup transactions and exit timelocks.",
+      "status": "documented",
+      "status_note": "Implementation documentation reviewed; current service availability not transaction-tested.",
+      "sources": [
+        {
+          "url": "https://mercurylayer.com/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "second",
+      "name": "Second",
+      "category": "payments",
+      "website": "https://second.tech/",
+      "networks": [
+        "Bitcoin",
+        "Ark",
+        "Lightning"
+      ],
+      "kind": "infrastructure",
+      "description": "Ark implementation and SDKs connecting Ark, Lightning and on-chain payments.",
+      "bitcoin_mechanism": "Ark virtual UTXOs and implementation-specific transfer/recovery paths.",
+      "review_focus": "Server availability, VTXO expiry, backups and exit fees.",
+      "status": "mainnet-announced",
+      "status_note": "Official homepage announces mainnet; no payment testing performed.",
+      "sources": [
+        {
+          "url": "https://second.tech/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "spark",
+      "name": "Spark",
+      "category": "payments",
+      "website": "https://www.spark.money/",
+      "networks": [
+        "Bitcoin",
+        "Spark",
+        "Lightning"
+      ],
+      "kind": "infrastructure",
+      "description": "Bitcoin and asset payment infrastructure with Lightning connectivity.",
+      "bitcoin_mechanism": "Statechain-style transfers and an operator-assisted Bitcoin ownership system.",
+      "review_focus": "Operator and key-share assumptions, unilateral exit details and issued-asset backing.",
+      "status": "documented",
+      "status_note": "Distinct from the Spark DeFi lending/savings brand on Ethereum.",
+      "sources": [
+        {
+          "url": "https://www.spark.money/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "bitlight-wallet",
+      "name": "Bitlight Wallet",
+      "category": "wallets",
+      "website": "https://bitlightlabs.com/wallet",
+      "networks": [
+        "Bitcoin",
+        "RGB",
+        "Lightning"
+      ],
+      "kind": "wallet",
+      "description": "Wallet for Bitcoin and RGB assets, with asset issuance tooling.",
+      "bitcoin_mechanism": "Client-side RGB state and Bitcoin wallet functionality.",
+      "review_focus": "Asset proofs, issuer authenticity, backups and version compatibility.",
+      "status": "documented",
+      "status_note": "RGB assets require more than a BTC-only recovery assumption.",
+      "sources": [
+        {
+          "url": "https://bitlightlabs.com/wallet",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "leather",
+      "name": "Leather",
+      "category": "wallets",
+      "website": "https://leather.io/",
+      "networks": [
+        "Bitcoin",
+        "Stacks"
+      ],
+      "kind": "wallet",
+      "description": "Wallet for Bitcoin, Stacks assets and ecosystem applications.",
+      "bitcoin_mechanism": "Bitcoin and Stacks transaction signing.",
+      "review_focus": "Backups, hardware-wallet compatibility and application approvals.",
+      "status": "documented",
+      "status_note": "Access layer rather than an independent source of yield.",
+      "sources": [
+        {
+          "url": "https://leather.io/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "xverse",
+      "name": "Xverse",
+      "category": "wallets",
+      "website": "https://www.xverse.app/",
+      "networks": [
+        "Bitcoin",
+        "Stacks",
+        "Spark",
+        "Starknet"
+      ],
+      "kind": "wallet",
+      "description": "Wallet and application gateway for Bitcoin assets and connected financial services.",
+      "bitcoin_mechanism": "User signing plus integrations with distinct Bitcoin-related networks.",
+      "review_focus": "Recovery, signing permissions and the trust model of each connected service.",
+      "status": "documented",
+      "status_note": "Wallet self-custody does not guarantee self-custody after depositing into an application.",
+      "sources": [
+        {
+          "url": "https://www.xverse.app/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "bitcoin-dev-kit",
+      "name": "Bitcoin Dev Kit",
+      "category": "builders",
+      "website": "https://bitcoindevkit.org/",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "developer-tool",
+      "description": "Libraries for Bitcoin wallet and transaction applications.",
+      "bitcoin_mechanism": "Bitcoin descriptors, transaction construction and chain access.",
+      "review_focus": "Key handling, dependency versions and application security.",
+      "status": "documented",
+      "status_note": "Developer infrastructure, not a financial service.",
+      "sources": [
+        {
+          "url": "https://bitcoindevkit.org/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "bitcoin-s",
+      "name": "Bitcoin-S",
+      "category": "builders",
+      "website": "https://bitcoin-s.org/",
+      "networks": [
+        "Bitcoin",
+        "Lightning"
+      ],
+      "kind": "developer-tool",
+      "description": "Scala libraries and tooling for Bitcoin transaction applications.",
+      "bitcoin_mechanism": "Bitcoin and Lightning data structures and transaction APIs.",
+      "review_focus": "Application design, signing and maintained library versions.",
+      "status": "documented",
+      "status_note": "Useful building block for Bitcoin financial software.",
+      "sources": [
+        {
+          "url": "https://bitcoin-s.org/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "breez-sdk",
+      "name": "Breez SDK",
+      "category": "builders",
+      "website": "https://breez.technology/",
+      "networks": [
+        "Bitcoin",
+        "Lightning",
+        "Spark",
+        "Liquid"
+      ],
+      "kind": "developer-tool",
+      "description": "SDKs for embedding Bitcoin payments into applications.",
+      "bitcoin_mechanism": "Implementation-dependent Bitcoin payment-layer integrations.",
+      "review_focus": "Which SDK implementation is used, recovery, providers and payment liquidity.",
+      "status": "documented",
+      "status_note": "Different SDK backends have different trust and availability properties.",
+      "sources": [
+        {
+          "url": "https://breez.technology/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "elements",
+      "name": "Elements",
+      "category": "builders",
+      "website": "https://elementsproject.org/",
+      "networks": [
+        "Liquid",
+        "Sidechains"
+      ],
+      "kind": "developer-tool",
+      "description": "Sidechain-capable software with confidential transactions and asset issuance.",
+      "bitcoin_mechanism": "Independent or pegged chains with configurable consensus.",
+      "review_focus": "Operator model, peg construction and issued-asset obligations.",
+      "status": "documented",
+      "status_note": "Software capability does not certify any chain built from it.",
+      "sources": [
+        {
+          "url": "https://elementsproject.org/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "layeredge",
+      "name": "LayerEdge",
+      "category": "builders",
+      "website": "https://www.layeredge.io/",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "infrastructure",
+      "description": "Proof aggregation and anchoring infrastructure for external applications.",
+      "bitcoin_mechanism": "Aggregated proofs anchored to underlying networks.",
+      "review_focus": "Anchoring versus actual enforcement, verifier design and deployment stage.",
+      "status": "documented",
+      "status_note": "Do not equate publishing a proof commitment with inheriting all Bitcoin security properties.",
+      "sources": [
+        {
+          "url": "https://www.layeredge.io/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "lightning-dev-kit",
+      "name": "Lightning Dev Kit",
+      "category": "builders",
+      "website": "https://lightningdevkit.org/",
+      "networks": [
+        "Lightning"
+      ],
+      "kind": "developer-tool",
+      "description": "Modular Lightning implementation and SDK for applications.",
+      "bitcoin_mechanism": "Payment-channel logic integrated into the host application.",
+      "review_focus": "Persistence, channel monitoring and integration correctness.",
+      "status": "documented",
+      "status_note": "Developers choose their own operational architecture.",
+      "sources": [
+        {
+          "url": "https://lightningdevkit.org/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "metashrew",
+      "name": "Metashrew",
+      "category": "builders",
+      "website": "https://github.com/kungfuflex/metashrew",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "developer-tool",
+      "description": "WASM-powered indexing framework for Bitcoin metaprotocols.",
+      "bitcoin_mechanism": "Block processing and application-defined indexer logic.",
+      "review_focus": "Indexer implementation, reorg handling and state agreement.",
+      "status": "documented",
+      "status_note": "Indexing a contract is different from Bitcoin consensus enforcing its full semantics.",
+      "sources": [
+        {
+          "url": "https://github.com/kungfuflex/metashrew",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "nubit-bitcoin-thunderbolt",
+      "name": "Nubit / Bitcoin Thunderbolt",
+      "category": "builders",
+      "website": "https://docs.nubit.org/overview",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "infrastructure",
+      "description": "Bitcoin transfer and programmability project now described around Thunderbolt.",
+      "bitcoin_mechanism": "Off-chain UTXO ownership changes with threshold-signing committees.",
+      "review_focus": "Committee assumptions, implementation maturity and enforceable exits.",
+      "status": "documented",
+      "status_note": "Older descriptions focused only on data availability are incomplete.",
+      "sources": [
+        {
+          "url": "https://docs.nubit.org/bitcoin-thunderbolt/the-blueprint-for-bitcoins-next-era/how-it-works",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "rebar-labs",
+      "name": "Rebar Labs",
+      "category": "builders",
+      "website": "https://rebarlabs.io/",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "infrastructure",
+      "description": "Bitcoin APIs, metaprotocol data and transaction-submission tools with MEV-focused features.",
+      "bitcoin_mechanism": "Bitcoin indexing and transaction-flow infrastructure.",
+      "review_focus": "Data accuracy, transaction visibility and service dependence.",
+      "status": "documented",
+      "status_note": "Earn, Shield and data products need separate evaluation; no yield claim is inferred from API access.",
+      "sources": [
+        {
+          "url": "https://rebarlabs.io/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "babylon-ecosystem",
+      "name": "Babylon ecosystem",
+      "category": "research",
+      "website": "https://babylonlabs.io/ecosystem",
+      "networks": [
+        "Bitcoin",
+        "Babylon"
+      ],
+      "kind": "ecosystem-directory",
+      "description": "Official discovery map for staking providers and connected infrastructure.",
+      "bitcoin_mechanism": "Ecosystem self-reporting.",
+      "review_focus": "Distinguish direct staking, liquid wrappers and infrastructure providers.",
+      "status": "documented",
+      "status_note": "Partner inclusion is not an audit or endorsement by this list.",
+      "sources": [
+        {
+          "url": "https://babylonlabs.io/ecosystem?aecfdcd8_page=3",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "bitcoin-layers",
+      "name": "Bitcoin Layers",
+      "category": "research",
+      "website": "https://www.bitcoinlayers.org/",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "research-resource",
+      "description": "Independent directory analyzing Bitcoin layers, BTC representations and trust assumptions.",
+      "bitcoin_mechanism": "Research rather than custody or execution infrastructure.",
+      "review_focus": "Methodology, assessment date and scope of each project review.",
+      "status": "documented",
+      "status_note": "A useful counterweight to project marketing; classifications can evolve.",
+      "sources": [
+        {
+          "url": "https://www.bitcoinlayers.org/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "bitcoin-layers-methodology",
+      "name": "Bitcoin Layers methodology",
+      "category": "research",
+      "website": "https://bitcoin-layers.gitbook.io/bitcoin-layers/approach-to-analyzing-risk",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "research-resource",
+      "description": "Framework covering data availability, operators, settlement and bridge custody.",
+      "bitcoin_mechanism": "Structured risk analysis.",
+      "review_focus": "Apply dimensions separately; avoid turning a label into a universal safety score.",
+      "status": "documented",
+      "status_note": "Used as a research lens, not reproduced as a rating system.",
+      "sources": [
+        {
+          "url": "https://bitcoin-layers.gitbook.io/bitcoin-layers/approach-to-analyzing-risk",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "defillama-bitcoin-dashboard",
+      "name": "DefiLlama Bitcoin dashboard",
+      "category": "research",
+      "website": "https://defillama.com/chain/bitcoin",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "analytics",
+      "description": "Protocol discovery and metrics for projects classified under Bitcoin.",
+      "bitcoin_mechanism": "Aggregator adapters and category definitions.",
+      "review_focus": "Double counting, classifications, adapter coverage and TVL versus deposited BTC.",
+      "status": "documented",
+      "status_note": "Bitcoin-linked assets on other chains require additional dashboards; no static TVL ranking is copied here.",
+      "sources": [
+        {
+          "url": "https://defillama.com/chain/bitcoin?currency=USD",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "sok-bitcoin-layer-two",
+      "name": "SoK: Bitcoin Layer Two",
+      "category": "research",
+      "website": "https://arxiv.org/abs/2409.02650",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "research-paper",
+      "description": "Research paper surveying Bitcoin layer-two constructions and tradeoffs.",
+      "bitcoin_mechanism": "Academic systematization.",
+      "review_focus": "Paper version and gap between design and deployed implementation.",
+      "status": "documented",
+      "status_note": "Complements current project documentation; not a live product directory.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2409.02650",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "stacks-ecosystem",
+      "name": "Stacks ecosystem",
+      "category": "research",
+      "website": "https://www.stacks.co/explore/ecosystem",
+      "networks": [
+        "Stacks"
+      ],
+      "kind": "ecosystem-directory",
+      "description": "Official application, wallet and developer-tool discovery map.",
+      "bitcoin_mechanism": "Ecosystem self-reporting.",
+      "review_focus": "A listing is not a security review or current service guarantee.",
+      "status": "documented",
+      "status_note": "Used for discovery and cross-checking relevance.",
+      "sources": [
+        {
+          "url": "https://www.stacks.co/explore/ecosystem",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "bima",
+      "name": "Bima",
+      "category": "centralized",
+      "website": "https://docs.bima.money/",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "platform",
+      "description": "Structured financing against digital assets with an agreed upside-sharing component.",
+      "bitcoin_mechanism": "Accountable vault infrastructure and FalconX-held collateral in the documented arrangement.",
+      "review_focus": "Counterparty and derivative terms, downside exposure and foregone upside.",
+      "status": "changed",
+      "status_note": "Current docs describe institutional structured financing; do not assume the older stablecoin framing still applies.",
+      "sources": [
+        {
+          "url": "https://docs.bima.money/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "bouncebit",
+      "name": "BounceBit",
+      "category": "centralized",
+      "website": "https://www.bouncebit.io/",
+      "networks": [
+        "Bitcoin",
+        "BounceBit",
+        "Multichain"
+      ],
+      "kind": "platform",
+      "description": "CeDeFi platform combining custodied assets, managed strategies and an EVM settlement chain.",
+      "bitcoin_mechanism": "BB-tokens backed through external custody and investment arrangements.",
+      "review_focus": "Custodian and exchange exposure, manager risk and withdrawal terms.",
+      "status": "documented",
+      "status_note": "Listed as hybrid/centralized finance rather than Bitcoin-native non-custodial staking.",
+      "sources": [
+        {
+          "url": "https://www.bouncebit.io/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "exsat",
+      "name": "exSat",
+      "category": "centralized",
+      "website": "https://exsat.network/",
+      "networks": [
+        "Bitcoin",
+        "exSat"
+      ],
+      "kind": "platform",
+      "description": "Digital-asset banking platform offering qualified-access custody, payments and strategy products.",
+      "bitcoin_mechanism": "Custody and managed strategies alongside Bitcoin-related infrastructure.",
+      "review_focus": "Eligibility, legal counterparties, strategy leverage and redemption windows.",
+      "status": "changed",
+      "status_note": "Current homepage emphasizes digital banking rather than only a Bitcoin scaling layer.",
+      "sources": [
+        {
+          "url": "https://exsat.network/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "ledn",
+      "name": "Ledn",
+      "category": "centralized",
+      "website": "https://www.ledn.io/",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "platform",
+      "description": "Centralized Bitcoin-backed loans and related credit products.",
+      "bitcoin_mechanism": "Contractual loans with collateral held through custody arrangements.",
+      "review_focus": "Custody, lender solvency, loan terms, liquidation and jurisdiction.",
+      "status": "documented",
+      "status_note": "CeFi comparison entry; no claim that collateral is controlled solely by the borrower.",
+      "sources": [
+        {
+          "url": "https://ledn.io/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "unchained",
+      "name": "Unchained",
+      "category": "centralized",
+      "website": "https://www.unchained.com/",
+      "networks": [
+        "Bitcoin"
+      ],
+      "kind": "platform",
+      "description": "Bitcoin financial services built around collaborative custody.",
+      "bitcoin_mechanism": "Multisignature arrangements and product-specific financial contracts.",
+      "review_focus": "Key roles, service eligibility and the terms of each product.",
+      "status": "documented",
+      "status_note": "Custody services and borrowing products should be evaluated separately.",
+      "sources": [
+        {
+          "url": "https://unchained.com/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "botanix",
+      "name": "Botanix",
+      "category": "historical",
+      "website": "https://botanixlabs.com/",
+      "networks": [
+        "Bitcoin",
+        "Botanix"
+      ],
+      "kind": "network",
+      "description": "Historical Bitcoin EVM ecosystem associated with the Spiderchain design.",
+      "bitcoin_mechanism": "Federated/sidechain execution and Bitcoin bridge arrangements.",
+      "review_focus": "Shutdown information and any remaining asset-recovery routes.",
+      "status": "discontinued",
+      "status_note": "Official site announces shutdown on July 1, 2026. Retained for historical context, not new deposits.",
+      "sources": [
+        {
+          "url": "https://botanixlabs.com/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "pstake",
+      "name": "pSTAKE",
+      "category": "historical",
+      "website": "https://www.pstake.finance/",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "protocol",
+      "description": "Former Bitcoin/liquid-staking project whose current site presents a research collective.",
+      "bitcoin_mechanism": "Historical staking products with separate deprecation flows.",
+      "review_focus": "Legacy withdrawal instructions and product-specific closure status.",
+      "status": "deprecated",
+      "status_note": "Staking links now point to deprecation.pstake.finance; site focuses on Web3/AI research.",
+      "sources": [
+        {
+          "url": "https://www.pstake.finance/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "tropykus",
+      "name": "Tropykus",
+      "category": "historical",
+      "website": "https://tropykus.com/",
+      "networks": [
+        "Rootstock"
+      ],
+      "kind": "application",
+      "description": "Historical Rootstock lending application.",
+      "bitcoin_mechanism": "Rootstock smart-contract lending pools.",
+      "review_focus": "Remaining contract interactions and recovery instructions.",
+      "status": "discontinued",
+      "status_note": "Official site says interface closed July 27 and support ended August 31, 2026; contracts may remain accessible.",
+      "sources": [
+        {
+          "url": "https://tropykus.com/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    },
+    {
+      "id": "yala",
+      "name": "Yala",
+      "category": "historical",
+      "website": "https://www.yala.org/",
+      "networks": [
+        "Bitcoin",
+        "Multichain"
+      ],
+      "kind": "protocol",
+      "description": "Previously included in BTCfi stablecoin maps; current site presents prediction-market intelligence.",
+      "bitcoin_mechanism": "Legacy BTCfi products require separate redemption and backing review.",
+      "review_focus": "Legacy redemption availability, obligations and updated product scope.",
+      "status": "changed",
+      "status_note": "Homepage now describes an AI fair-value agent and retains a Redeem link; current YU minting was not established.",
+      "sources": [
+        {
+          "url": "https://www.yala.org/",
+          "type": "primary",
+          "checked": "2026-09-25"
+        }
+      ],
+      "last_reviewed": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,954 @@
+{
+  "checked_at": "2026-09-25T11:48:43.333297+00:00",
+  "meaning": "HTTP reachability only. A 200 response is not proof of an active service; failure is not proof of closure.",
+  "results": [
+    {
+      "url": "https://aave.com/",
+      "http_status": 200,
+      "final_url": "https://aave.com/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://alexlab.co/",
+      "http_status": 200,
+      "final_url": "https://alexlab.co/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://amboss.tech/",
+      "http_status": 200,
+      "final_url": "https://amboss.tech/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://api.docs.boltz.exchange/lifecycle.html",
+      "http_status": null,
+      "result": "unresolved",
+      "note": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://ark-protocol.org/",
+      "http_status": 200,
+      "final_url": "https://ark-protocol.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://arkadeos.com/",
+      "http_status": 200,
+      "final_url": "https://arkadeos.com/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://arkadiko.finance/",
+      "http_status": 200,
+      "final_url": "https://arkadiko.finance/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://arxiv.org/abs/2409.02650",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2409.02650",
+      "result": "reachable"
+    },
+    {
+      "url": "https://babylonlabs.io/",
+      "http_status": 200,
+      "final_url": "https://babylonlabs.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://babylonlabs.io/ecosystem",
+      "http_status": 200,
+      "final_url": "https://babylonlabs.io/ecosystem",
+      "result": "reachable"
+    },
+    {
+      "url": "https://babylonlabs.io/ecosystem?aecfdcd8_page=3",
+      "http_status": 200,
+      "final_url": "https://babylonlabs.io/ecosystem?aecfdcd8_page=3",
+      "result": "reachable"
+    },
+    {
+      "url": "https://babylonlabs.io/institutional-staking",
+      "http_status": 200,
+      "final_url": "https://babylonlabs.io/institutional-staking",
+      "result": "reachable"
+    },
+    {
+      "url": "https://bapp.juiceswap.com/",
+      "http_status": 200,
+      "final_url": "https://juiceswap.com/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://bitcoin-layers.gitbook.io/bitcoin-layers/approach-to-analyzing-risk",
+      "http_status": 200,
+      "final_url": "https://bitcoin-layers.gitbook.io/bitcoin-layers/approach-to-analyzing-risk",
+      "result": "reachable"
+    },
+    {
+      "url": "https://bitcoin-s.org/",
+      "http_status": 200,
+      "final_url": "https://bitcoin-s.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://bitcoindevkit.org/",
+      "http_status": 200,
+      "final_url": "https://bitcoindevkit.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://bitlightlabs.com/wallet",
+      "http_status": 403,
+      "result": "http-error",
+      "note": "May be access protection; manual review required."
+    },
+    {
+      "url": "https://bitvm.org/",
+      "http_status": 200,
+      "final_url": "https://bitvm.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://boltz.exchange/",
+      "http_status": null,
+      "result": "unresolved",
+      "note": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://botanixlabs.com/",
+      "http_status": 200,
+      "final_url": "https://botanixlabs.com/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://breez.technology/",
+      "http_status": 200,
+      "final_url": "https://breez.technology/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cashu.space/",
+      "http_status": 200,
+      "final_url": "https://cashu.space/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://chainflip.io/",
+      "http_status": 200,
+      "final_url": "https://chainflip.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://citrea.xyz/",
+      "http_status": 200,
+      "final_url": "https://citrea.xyz/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://citrea.xyz/clementine_whitepaper.pdf",
+      "http_status": 200,
+      "final_url": "https://citrea.xyz/clementine_whitepaper.pdf",
+      "result": "reachable"
+    },
+    {
+      "url": "https://coredao.org/",
+      "http_status": 200,
+      "final_url": "https://coredao.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://curve.finance/",
+      "http_status": 200,
+      "final_url": "https://www.curve.finance/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://dashboard.internetcomputer.org/bitcoin",
+      "http_status": 200,
+      "final_url": "https://dashboard.internetcomputer.org/bitcoin",
+      "result": "reachable"
+    },
+    {
+      "url": "https://debifi.com/",
+      "http_status": null,
+      "result": "unresolved",
+      "note": "<urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>"
+    },
+    {
+      "url": "https://defillama.com/chain/bitcoin",
+      "http_status": 403,
+      "result": "http-error",
+      "note": "May be access protection; manual review required."
+    },
+    {
+      "url": "https://defillama.com/chain/bitcoin?currency=USD",
+      "http_status": 403,
+      "result": "http-error",
+      "note": "May be access protection; manual review required."
+    },
+    {
+      "url": "https://dlc.wiki/",
+      "http_status": 200,
+      "final_url": "https://dlc.wiki/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs-v4.venus.io/risk",
+      "http_status": 200,
+      "final_url": "https://docs-v4.venus.io/risk/resilient-price-oracle",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.alpen.org/",
+      "http_status": 200,
+      "final_url": "https://docs.alpen.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.bima.money/",
+      "http_status": 200,
+      "final_url": "https://docs.bima.money/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.citrea.xyz/",
+      "http_status": 200,
+      "final_url": "https://docs.citrea.xyz/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.ducatprotocol.com/",
+      "http_status": 200,
+      "final_url": "https://docs.ducatprotocol.com/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.ducatprotocol.com/how-ducat-works/vaults",
+      "http_status": 200,
+      "final_url": "https://docs.ducatprotocol.com/how-ducat-works/vaults",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.fbtc.com/security/risk-management/custody",
+      "http_status": 200,
+      "final_url": "https://docs.fbtc.com/security/risk-management/custody",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.firefish.io/",
+      "http_status": 200,
+      "final_url": "https://docs.firefish.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.fractalbitcoin.io/",
+      "http_status": 200,
+      "final_url": "https://docs.fractalbitcoin.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.fractalbitcoin.io/getting-started/introduction",
+      "http_status": 200,
+      "final_url": "https://docs.fractalbitcoin.io/getting-started/introduction",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.garden.finance/",
+      "http_status": 200,
+      "final_url": "https://garden.finance/docs/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.gobob.xyz/",
+      "http_status": 200,
+      "final_url": "https://docs.gobob.xyz/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.internetcomputer.org/concepts/chain-fusion/bitcoin/",
+      "http_status": 200,
+      "final_url": "https://docs.internetcomputer.org/concepts/chain-fusion/bitcoin/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.lightning.engineering/lightning-network-tools/loop",
+      "http_status": 200,
+      "final_url": "https://docs.lightning.engineering/lightning-network-tools/loop",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.lightning.engineering/lightning-network-tools/pool",
+      "http_status": 200,
+      "final_url": "https://docs.lightning.engineering/lightning-network-tools/pool",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.lightning.engineering/the-lightning-network/taproot-assets",
+      "http_status": 200,
+      "final_url": "https://docs.lightning.engineering/the-lightning-network/taproot-assets",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.lombard.finance/learn/products/assets",
+      "http_status": 200,
+      "final_url": "https://docs.lombard.finance/learn/products/assets",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.lombard.finance/use/bridging",
+      "http_status": 200,
+      "final_url": "https://docs.lombard.finance/use/bridging",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.lombard.finance/use/lbtc",
+      "http_status": 200,
+      "final_url": "https://docs.lombard.finance/use/lbtc",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.nubit.org/bitcoin-thunderbolt/the-blueprint-for-bitcoins-next-era/how-it-works",
+      "http_status": 200,
+      "final_url": "https://docs.nubit.org/bitcoin-thunderbolt/the-blueprint-for-bitcoins-next-era/how-it-works",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.nubit.org/overview",
+      "http_status": 200,
+      "final_url": "https://docs.nubit.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.opnet.org/",
+      "http_status": 504,
+      "result": "http-error",
+      "note": "May be access protection; manual review required."
+    },
+    {
+      "url": "https://docs.opnet.org/getting-started/introduction-to-op-net/bitcoin-smart-contracts-explained",
+      "http_status": 504,
+      "result": "http-error",
+      "note": "May be access protection; manual review required."
+    },
+    {
+      "url": "https://docs.ordinals.com/",
+      "http_status": 200,
+      "final_url": "https://docs.ordinals.com/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.ordinals.com/runes.html",
+      "http_status": 200,
+      "final_url": "https://docs.ordinals.com/runes.html",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.pell.network/",
+      "http_status": 200,
+      "final_url": "https://docs.pell.network/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.satlayer.xyz/",
+      "http_status": 200,
+      "final_url": "https://docs.satlayer.xyz/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.threshold.network/tbtc-v2",
+      "http_status": 200,
+      "final_url": "https://docs.threshold.network/tbtc-v2",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.vesu.xyz/",
+      "http_status": 200,
+      "final_url": "https://docs.vesu.xyz/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.yieldbasis.com/pdf/mica-whitepaper.pdf",
+      "http_status": 200,
+      "final_url": "https://docs.yieldbasis.com/pdf/mica-whitepaper.pdf",
+      "result": "reachable"
+    },
+    {
+      "url": "https://domo-2.gitbook.io/brc-20-experiment",
+      "http_status": 200,
+      "final_url": "https://domo-2.gitbook.io/brc-20-experiment",
+      "result": "reachable"
+    },
+    {
+      "url": "https://ecosystem.btcfi.one/",
+      "http_status": 200,
+      "final_url": "https://ecosystem.btcfi.one/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://elementsproject.org/",
+      "http_status": 200,
+      "final_url": "https://elementsproject.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://exsat.network/",
+      "http_status": 200,
+      "final_url": "https://exsat.network/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://fbtc.com/",
+      "http_status": 200,
+      "final_url": "https://fbtc.com/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://fedimint.org/",
+      "http_status": 200,
+      "final_url": "https://fedimint.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://firefish.io/",
+      "http_status": 200,
+      "final_url": "https://firefish.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://fluid.io/",
+      "http_status": 200,
+      "final_url": "https://fluid.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://garden.finance/docs/",
+      "http_status": 200,
+      "final_url": "https://garden.finance/docs/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/discreetlogcontracts/dlcspecs",
+      "http_status": 200,
+      "final_url": "https://github.com/discreetlogcontracts/dlcspecs",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/kungfuflex/alkanes-rs",
+      "http_status": 200,
+      "final_url": "https://github.com/kungfuflex/alkanes-rs",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/kungfuflex/metashrew",
+      "http_status": 200,
+      "final_url": "https://github.com/kungfuflex/metashrew",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/pumpbtc/pumpbtc-contract",
+      "http_status": 200,
+      "final_url": "https://github.com/pumpbtc/pumpbtc-contract",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/utxostack/rgbpp-sdk",
+      "http_status": 200,
+      "final_url": "https://github.com/utxostack/rgbpp-sdk",
+      "result": "reachable"
+    },
+    {
+      "url": "https://gov.fluid.io/t/launch-wbtc-markets-on-fluid/787",
+      "http_status": 200,
+      "final_url": "https://gov.fluid.io/t/launch-wbtc-markets-on-fluid/787",
+      "result": "reachable"
+    },
+    {
+      "url": "https://governance.aave.com/t/coinbase-wrapped-btc-cbbtc-on-aave-monad-assessments/25257",
+      "http_status": 200,
+      "final_url": "https://governance.aave.com/t/coinbase-wrapped-btc-cbbtc-on-aave-monad-assessments/25257",
+      "result": "reachable"
+    },
+    {
+      "url": "https://hemi.xyz/",
+      "http_status": 200,
+      "final_url": "https://hemi.xyz/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://leather.io/",
+      "http_status": 200,
+      "final_url": "https://leather.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://ledn.io/",
+      "http_status": 200,
+      "final_url": "https://www.ledn.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://lend.hodlhodl.com/",
+      "http_status": null,
+      "result": "unresolved",
+      "note": "<urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>"
+    },
+    {
+      "url": "https://lendasat.com/docs",
+      "http_status": 200,
+      "final_url": "https://lendasat.com/docs",
+      "result": "reachable"
+    },
+    {
+      "url": "https://lendasat.com/docs/p2p-loans/faq",
+      "http_status": 200,
+      "final_url": "https://lendasat.com/docs/p2p-loans/faq",
+      "result": "reachable"
+    },
+    {
+      "url": "https://lightning.network/",
+      "http_status": 200,
+      "final_url": "https://lightning.network/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://lightningdevkit.org/",
+      "http_status": 200,
+      "final_url": "https://lightningdevkit.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://liquidium.wtf/",
+      "http_status": 200,
+      "final_url": "https://liquidium.wtf/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://lnmarkets.com/",
+      "http_status": 200,
+      "final_url": "https://lnmarkets.com/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://lorenzo-protocol.gitbook.io/docs/bitcoin-liquidity-layer",
+      "http_status": 200,
+      "final_url": "https://lorenzo-protocol.gitbook.io/docs/bitcoin-liquidity-layer",
+      "result": "reachable"
+    },
+    {
+      "url": "https://mercurylayer.com/",
+      "http_status": 200,
+      "final_url": "https://mercurylayer.com/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://merlinchain.io/",
+      "http_status": 200,
+      "final_url": "https://merlinchain.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://mezo.org/",
+      "http_status": 200,
+      "final_url": "https://mezo.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://moneyonchain.com/",
+      "http_status": 200,
+      "final_url": "https://moneyonchain.com/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://morpho.org/",
+      "http_status": 200,
+      "final_url": "https://morpho.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://morpho.org/blog/cbbtc-lending-markets-deployed-on-morpho",
+      "http_status": 200,
+      "final_url": "https://morpho.org/blog/cbbtc-lending-markets-deployed-on-morpho",
+      "result": "reachable"
+    },
+    {
+      "url": "https://pell.network/",
+      "http_status": 200,
+      "final_url": "https://pell.network/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://rebarlabs.io/",
+      "http_status": 200,
+      "final_url": "https://rebarlabs.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://rgb.tech/",
+      "http_status": 200,
+      "final_url": "https://rgb.tech/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://rootstock.io/",
+      "http_status": 200,
+      "final_url": "https://rootstock.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://second.tech/",
+      "http_status": 200,
+      "final_url": "https://second.tech/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://sideswap.io/",
+      "http_status": 200,
+      "final_url": "https://sideswap.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://solv.finance/",
+      "http_status": 403,
+      "result": "http-error",
+      "note": "May be access protection; manual review required."
+    },
+    {
+      "url": "https://sovryn.app/",
+      "http_status": 200,
+      "final_url": "https://sovryn.app/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://sovryn.com/zero",
+      "http_status": 200,
+      "final_url": "https://sovryn.com/zero",
+      "result": "reachable"
+    },
+    {
+      "url": "https://static.bitlayer.org/Bitlayer-Technical-Whitepaper.pdf",
+      "http_status": 200,
+      "final_url": "https://static.bitlayer.org/Bitlayer-Technical-Whitepaper.pdf",
+      "result": "reachable"
+    },
+    {
+      "url": "https://talk.nervos.org/t/rgb-protocol-light-paper-translation/7790",
+      "http_status": 200,
+      "final_url": "https://talk.nervos.org/t/rgb-protocol-light-paper-translation/7790",
+      "result": "reachable"
+    },
+    {
+      "url": "https://thorchain.org/",
+      "http_status": 200,
+      "final_url": "https://thorchain.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://tropykus.com/",
+      "http_status": 200,
+      "final_url": "https://tropykus.com/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://unchained.com/",
+      "http_status": 200,
+      "final_url": "https://www.unchained.com/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://unisat.io/",
+      "http_status": 200,
+      "final_url": "https://unisat.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://uniswap.org/",
+      "http_status": 200,
+      "final_url": "https://app.uniswap.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://venus.io/",
+      "http_status": 200,
+      "final_url": "https://venus.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://vesu.xyz/",
+      "http_status": 200,
+      "final_url": "https://vesu.xyz/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.alpen.org/",
+      "http_status": 200,
+      "final_url": "https://www.alpen.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.arch.network/",
+      "http_status": 200,
+      "final_url": "https://www.arch.network/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.atomiq.exchange/",
+      "http_status": 200,
+      "final_url": "https://www.atomiq.exchange/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.avalonfinance.xyz/",
+      "http_status": 200,
+      "final_url": "https://www.avalonfinance.xyz/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bedrock.technology/",
+      "http_status": 200,
+      "final_url": "https://www.bedrock.technology/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bitcoinlayers.org/",
+      "http_status": 200,
+      "final_url": "https://www.bitcoinlayers.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bitcoinos.build/",
+      "http_status": 200,
+      "final_url": "https://www.bitcoinos.build/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bitflow.finance/",
+      "http_status": 200,
+      "final_url": "https://www.bitflow.finance/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bitlayer.org/",
+      "http_status": 200,
+      "final_url": "https://www.bitlayer.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bnbchain.org/en/blog/empowering-btcfi-on-bnb-chain-the-role-of-btcb-in-building-trust",
+      "http_status": 200,
+      "final_url": "https://www.bnbchain.org/en/blog/empowering-btcfi-on-bnb-chain-the-role-of-btcb-in-building-trust",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bouncebit.io/",
+      "http_status": 200,
+      "final_url": "https://www.bouncebit.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.bsquared.network/",
+      "http_status": 200,
+      "final_url": "https://www.bsquared.network/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.btcfi.one/",
+      "http_status": 200,
+      "final_url": "https://www.btcfi.one/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.coinbase.com/cbbtc",
+      "http_status": 403,
+      "result": "http-error",
+      "note": "May be access protection; manual review required."
+    },
+    {
+      "url": "https://www.endur.fi/",
+      "http_status": 200,
+      "final_url": "https://www.endur.fi/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.flashnet.xyz/",
+      "http_status": 200,
+      "final_url": "https://www.flashnet.xyz/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.goat.network/",
+      "http_status": 200,
+      "final_url": "https://www.goat.network/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.granite.world/",
+      "http_status": 200,
+      "final_url": "https://www.granite.world/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.lava.xyz/",
+      "http_status": 200,
+      "final_url": "https://www.lava.xyz/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.layeredge.io/",
+      "http_status": 200,
+      "final_url": "https://www.layeredge.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.ledn.io/",
+      "http_status": 200,
+      "final_url": "https://www.ledn.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.liquid.net/",
+      "http_status": 200,
+      "final_url": "https://www.liquid.net/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.lorenzo-protocol.xyz/",
+      "http_status": null,
+      "result": "unresolved",
+      "note": "The read operation timed out"
+    },
+    {
+      "url": "https://www.pendle.finance/",
+      "http_status": 200,
+      "final_url": "https://www.pendle.finance/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.pendle.finance/pendle",
+      "http_status": 200,
+      "final_url": "https://www.pendle.finance/pendle",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.pstake.finance/",
+      "http_status": 200,
+      "final_url": "https://www.pstake.finance/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.satsuma.exchange/",
+      "http_status": 200,
+      "final_url": "https://www.satsuma.exchange/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.spark.money/",
+      "http_status": 200,
+      "final_url": "https://www.spark.money/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.spectra.finance/",
+      "http_status": 200,
+      "final_url": "https://www.spectra.finance/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.stackingdao.com/",
+      "http_status": 200,
+      "final_url": "https://www.stackingdao.com/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.stacks.co/",
+      "http_status": 200,
+      "final_url": "https://www.stacks.co/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.stacks.co/bitcoin-native-finance",
+      "http_status": 200,
+      "final_url": "https://www.stacks.co/bitcoin-native-finance",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.stacks.co/blog/q1-2026-snapshot",
+      "http_status": 200,
+      "final_url": "https://www.stacks.co/blog/q1-2026-snapshot",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.stacks.co/blog/stacks-90-day-defi-incentive-program-announced-with-zest-and-bitflow",
+      "http_status": 200,
+      "final_url": "https://www.stacks.co/blog/stacks-90-day-defi-incentive-program-announced-with-zest-and-bitflow",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.stacks.co/explore/ecosystem",
+      "http_status": 200,
+      "final_url": "https://www.stacks.co/explore/ecosystem",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.stacks.co/sbtc",
+      "http_status": 200,
+      "final_url": "https://www.stacks.co/sbtc",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.starknet.io/blog/strkbtc-user-guide/",
+      "http_status": 200,
+      "final_url": "https://www.starknet.io/blog/strkbtc-user-guide/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.starknet.io/staking/",
+      "http_status": 200,
+      "final_url": "https://www.starknet.io/staking/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.threshold.network/",
+      "http_status": 200,
+      "final_url": "https://www.threshold.network/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.unchained.com/",
+      "http_status": 200,
+      "final_url": "https://www.unchained.com/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.wbtc.network/",
+      "http_status": 200,
+      "final_url": "https://www.wbtc.network/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.xverse.app/",
+      "http_status": 200,
+      "final_url": "https://www.xverse.app/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.yala.org/",
+      "http_status": 200,
+      "final_url": "https://www.yala.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.zestprotocol.com/",
+      "http_status": 200,
+      "final_url": "https://www.zestprotocol.com/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://yieldbasis.com/",
+      "http_status": 200,
+      "final_url": "https://yieldbasis.com/",
+      "result": "reachable"
+    }
+  ]
+}
