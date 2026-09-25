@@ -1,8 +1,8 @@
-# Ways to use BTCfi
+# Ways to use BTCFi
 
-[Back to Awesome BTCfi](../README.md) · Snapshot: September 25, 2026
+[Back to Awesome BTCFi](../README.md) · Snapshot: September 25, 2026
 
-BTCfi is an umbrella term, not a single architecture. A product can use BTC economically while executing on another chain, entrusting BTC to a custodian, or exposing the holder to a strategy. This map groups **activities**, while the [directory](directory.md) groups **projects and infrastructure**.
+BTCFi is an umbrella term, not a single architecture. A product can use BTC economically while executing on another chain, entrusting BTC to a custodian, or exposing the holder to a strategy. This map groups **activities**, while the [directory](directory.md) groups **projects and infrastructure**.
 
 These are descriptions of mechanisms, not recommended allocations. Examples identify relevant projects; they do not imply that a particular market is open, available in your jurisdiction, or appropriate for you.
 
@@ -14,7 +14,7 @@ These are descriptions of mechanisms, not recommended allocations. Examples iden
 | Route Lightning payments | Run a node and commit BTC to channels | Routing fees paid by users | [Lightning](directory.md#lightning-network), [LDK](directory.md#lightning-dev-kit) | Uptime, channel balance, rebalancing costs; revenue can be below costs |
 | Lease channel liquidity | Allocate channel capacity for a term | Fees from buyers of liquidity | [Lightning Pool](directory.md#lightning-pool) | Demand, lease commitments and node operations |
 | Swap across networks | Exchange BTC for a destination-chain asset | Access to another asset or market, rather than yield itself | [Atomiq](directory.md#atomiq), [Garden](directory.md#garden), [Boltz](directory.md#boltz) | Refund paths, timeouts and every additional route component |
-| Make markets for native cross-chain swaps | Supply capital to cross-chain liquidity systems | Swap or execution fees | [THORChain](directory.md#thorchain), [Chainflip](directory.md#chainflip) | Network vault custody, price exposure and pool mechanics |
+| Make markets for native cross-chain swaps | Supply capital to cross-chain liquidity systems | Swap or execution fees | [THORChain](directory.md#thorchain), [Chainflip](directory.md#chainflip), [Rujira](directory.md#rujira) | Network vault custody, price exposure and pool mechanics |
 | Borrow against Bitcoin in multisig | Lock BTC collateral and receive fiat or stablecoins | Liquidity without an immediate spot sale; borrowing has costs | [Lendasat](directory.md#lendasat), [Firefish](directory.md#firefish), [Debifi](directory.md#debifi) | Shared-key control, contracts, disputes and liquidation |
 | Lend fiat or stablecoins against BTC | Fund another party's collateralized loan | Borrower interest | [Hodl Hodl](directory.md#lend-at-hodl-hodl), [Firefish](directory.md#firefish) | Loan is often denominated in dollars, not BTC; default and execution risk |
 | Supply a BTC representation to a money market | Deposit a wrapper such as WBTC or BTCB | Interest paid by borrowers, sometimes incentives | [Aave](directory.md#aave), [Venus](directory.md#venus), [Zest](directory.md#zest-protocol) | Wrapper, contract, oracle and withdrawal-liquidity risk |
@@ -27,6 +27,7 @@ These are descriptions of mechanisms, not recommended allocations. Examples iden
 | Stake a BTC wrapper on another chain | Stake supported tokenized BTC | Rewards from that network | [Starknet Bitcoin staking](directory.md#starknet-bitcoin-staking) | Adds wrapper/bridge and chain dependencies; rewards are STRK |
 | Hold a liquid staking receipt | Exchange a supported asset for a transferable staking claim | Underlying staking rewards, potentially compounded | [Stacking DAO](directory.md#stacking-dao), [Endur](directory.md#endur) | Receipt-token depeg, redemption conditions and stacked dependencies |
 | Restake Bitcoin-linked collateral | Allocate an eligible representation to shared security | Payments or incentives from secured services | [Pell](directory.md#pell-network), [SatLayer](directory.md#satlayer) | Additional enforcement/slashing rights; terms differ by service and vault |
+| Hold or stake a hedged synthetic dollar | Hold USDh or a staked receipt | Perpetual-futures funding associated with a BTC hedge | [Hermetica](directory.md#hermetica) | Custody, derivatives venues, negative funding and restricted direct redemption |
 | Trade principal and future yield separately | Buy principal tokens or yield tokens | A maturity claim or the underlying asset's future income | [Pendle](directory.md#pendle), [Spectra](directory.md#spectra) | Underlying loss risk persists; yield tokens can lose their entire purchase value |
 | Use leveraged liquidity strategies | Deposit into a strategy managing liquidity and debt | Trading fees net of funding and rebalancing costs | [YieldBasis](directory.md#yieldbasis) | Reducing one form of loss can introduce leverage and borrowing risks |
 | Use covered-call or structured BTC strategies | Hold a managed receipt or enter a financing contract | Option premiums or exchanged future upside | [Lombard LBTC](directory.md#lombard-lbtc), [Bima](directory.md#bima) | Payoff differs from holding BTC; losses, counterparties and exit terms matter |
@@ -48,10 +49,10 @@ Tokenized yield also needs a unit of account. More units of a reward token do no
 
 ## What “Bitcoin staking” does and does not mean
 
-Bitcoin itself uses proof of work. BTCfi staking typically uses BTC or a BTC representation to participate in **another system's security or incentive design**. [Babylon's documentation](https://babylonlabs.io/institutional-staking), [Core's explanation](https://coredao.org/) and [Starknet's guide](https://www.starknet.io/staking/) describe materially different arrangements.
+Bitcoin itself uses proof of work. BTCFi staking typically uses BTC or a BTC representation to participate in **another system's security or incentive design**. [Babylon's documentation](https://babylonlabs.io/institutional-staking), [Core's explanation](https://coredao.org/) and [Starknet's guide](https://www.starknet.io/staking/) describe materially different arrangements.
 
 Also separate **staking STX and earning BTC** from **staking BTC**. [Stacking DAO](https://www.stackingdao.com/) now describes products for both, with different input assets and receipts. Never infer the deposited asset or security model from the currency in which rewards are advertised.
 
 ## Areas this map intentionally does not turn into a shopping list
 
-Leveraged looping, leveraged derivatives and recursive receipt-token strategies are possible compositions, not new sources of risk-free return. Mining operations, every centralized exchange, individual collectible collections and all Bitcoin ETFs would turn a BTCfi directory into a general Bitcoin industry catalog. They are outside the core scope, although custody, tokenization and institutional credit are included where they directly explain a BTCfi pathway.
+Leveraged looping, leveraged derivatives and recursive receipt-token strategies are possible compositions, not new sources of risk-free return. Mining operations, every centralized exchange, individual collectible collections and all Bitcoin ETFs would turn a BTCFi directory into a general Bitcoin industry catalog. They are outside the core scope, although custody, tokenization and institutional credit are included where they directly explain a BTCFi pathway.

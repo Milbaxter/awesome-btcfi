@@ -1,6 +1,6 @@
 # Material changes and terminology traps
 
-[Back to Awesome BTCfi](../README.md) · Reviewed September 25, 2026
+[Back to Awesome BTCFi](../README.md) · Reviewed September 25, 2026
 
 This is a selective research log, not a complete incident database. It records changes that materially affected how entries were classified.
 
@@ -9,7 +9,7 @@ This is a selective research log, not a complete incident database. It records c
 | Botanix's website announces a July 1, 2026 shutdown | `discontinued`; historical section | [Official website](https://botanixlabs.com/) |
 | Tropykus says its interface closed July 27 and support ended August 31, 2026 | `discontinued`; note that remaining contracts and recovery guidance may still exist | [Official notice](https://tropykus.com/) |
 | pSTAKE's current site focuses on Web3/AI research and routes staking links to a deprecation domain | `deprecated`; avoid presenting old staking descriptions as current availability | [Official website](https://www.pstake.finance/) |
-| Yala's site now presents a prediction-market intelligence product and retains a redemption link | `changed`; historical BTCfi inclusion, current YU minting unconfirmed | [Official website](https://www.yala.org/) |
+| Yala's site now presents a prediction-market intelligence product and retains a redemption link | `changed`; historical BTCFi inclusion, current YU minting unconfirmed | [Official website](https://www.yala.org/) |
 | Lombard says LBTC moved from Babylon staking to an institutional covered-call strategy in August 2026 | `changed`; classify under managed yield instead of simply calling it a Babylon LST | [Current asset documentation](https://docs.lombard.finance/learn/products/assets) |
 | Lombard published September 2026 chain-support changes, including deprecated mint/redemption routes | Do not copy old supported-chain lists into LBTC or BTC.b entries | [Bridge documentation and migration pointers](https://docs.lombard.finance/use/bridging) |
 | Bima's current documentation describes structured financing with named counterparties and upside sharing | `changed`; institutional-finance category | [Current documentation](https://docs.bima.money/) |
@@ -21,7 +21,7 @@ This is a selective research log, not a complete incident database. It records c
 
 ## Names that can mislead
 
-- **BTCfi / BTCFi / BitcoinFi:** broad industry labels; also used in specific product brands, including [BTCFi (Bifrost)](directory.md#btcfi-bifrost).
+- **BTCFi / BitcoinFi:** broad industry labels; also used in specific product brands, including [BTCFi (Bifrost)](directory.md#btcfi-bifrost).
 - **LBTC:** the Lombard product in this list. A matching ticker elsewhere is not sufficient identity verification.
 - **BTC.b versus BTCB:** separate systems; the dot is meaningful.
 - **sBTC:** the Stacks bridge asset here, not every other historical use of this ticker.

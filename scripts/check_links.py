@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def check(url):
     try:
-        req = Request(url, headers={'User-Agent': 'Awesome-BTCfi-LinkCheck/1.0 (+https://github.com/Milbaxter/awesome-btcfi)'})
+        req = Request(url, headers={'User-Agent': 'Awesome-BTCFi-LinkCheck/1.0 (+https://github.com/Milbaxter/awesome-btcfi)'})
         with urlopen(req, timeout=18) as response:
             response.read(1024)
             return {'url': url, 'http_status': response.status, 'final_url': response.url, 'result': 'reachable'}

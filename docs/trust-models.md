@@ -1,6 +1,6 @@
 # Trust models and due diligence
 
-[Back to Awesome BTCfi](../README.md)
+[Back to Awesome BTCFi](../README.md)
 
 This directory does not assign numerical safety scores. A single score hides the fact that custody, settlement, liquidity and economic exposure can fail independently. The [Bitcoin Layers methodology](https://bitcoin-layers.gitbook.io/bitcoin-layers/approach-to-analyzing-risk) provides a useful starting point for separating network operators, settlement, data availability and bridge custody.
 

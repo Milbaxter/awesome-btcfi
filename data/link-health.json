@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T11:48:43.333297+00:00",
+  "checked_at": "2026-09-25T11:55:26.705355+00:00",
   "meaning": "HTTP reachability only. A 200 response is not proof of an active service; failure is not proof of closure.",
   "results": [
     {
@@ -213,6 +213,12 @@
       "result": "reachable"
     },
     {
+      "url": "https://docs.bitflow.finance/Bitflow-documentation/learn/what-is-the-dex-aggregator",
+      "http_status": 200,
+      "final_url": "https://docs.bitflow.finance/Bitflow-documentation/learn/what-is-the-dex-aggregator",
+      "result": "reachable"
+    },
+    {
       "url": "https://docs.citrea.xyz/",
       "http_status": 200,
       "final_url": "https://docs.citrea.xyz/",
@@ -234,6 +240,24 @@
       "url": "https://docs.fbtc.com/security/risk-management/custody",
       "http_status": 200,
       "final_url": "https://docs.fbtc.com/security/risk-management/custody",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.fiammalabs.io/",
+      "http_status": 200,
+      "final_url": "https://docs.fiammalabs.io/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.fiammalabs.io/our-product-suite/pragmatically-trustless-bitvm-bitcoin-bridge/bridge-test",
+      "http_status": 200,
+      "final_url": "https://docs.fiammalabs.io/our-product-suite/pragmatically-trustless-bitvm-bitcoin-bridge/bridge-test",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.fiammalabs.io/our-product-suite/pragmatically-trustless-bitvm-bitcoin-bridge/security-analysis/users",
+      "http_status": 200,
+      "final_url": "https://docs.fiammalabs.io/our-product-suite/pragmatically-trustless-bitvm-bitcoin-bridge/security-analysis/users",
       "result": "reachable"
     },
     {
@@ -264,6 +288,30 @@
       "url": "https://docs.gobob.xyz/",
       "http_status": 200,
       "final_url": "https://docs.gobob.xyz/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.hermetica.fi/usdh/how-it-works/mint",
+      "http_status": 200,
+      "final_url": "https://docs.hermetica.fi/usdh/how-it-works/mint",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.hermetica.fi/usdh/how-it-works/yield",
+      "http_status": 200,
+      "final_url": "https://docs.hermetica.fi/usdh/how-it-works/yield",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.hermetica.fi/usdh/overview",
+      "http_status": 200,
+      "final_url": "https://docs.hermetica.fi/usdh/overview",
+      "result": "reachable"
+    },
+    {
+      "url": "https://docs.ibtc.network/ibtc-documentation",
+      "http_status": 200,
+      "final_url": "https://app.gitbook.com/o/vH9cQafiOS4XNZlfbYoU/sites/site_Sfr7H/ibtc-documentation",
       "result": "reachable"
     },
     {
@@ -351,6 +399,12 @@
       "result": "reachable"
     },
     {
+      "url": "https://docs.rujira.network/core-products/ruji-money-market",
+      "http_status": 200,
+      "final_url": "https://docs.rujira.network/core-products/ruji-money-market",
+      "result": "reachable"
+    },
+    {
       "url": "https://docs.satlayer.xyz/",
       "http_status": 200,
       "final_url": "https://docs.satlayer.xyz/",
@@ -429,6 +483,12 @@
       "result": "reachable"
     },
     {
+      "url": "https://github.com/DLC-link/dlc-solidity",
+      "http_status": 200,
+      "final_url": "https://github.com/DLC-link/dlc-solidity",
+      "result": "reachable"
+    },
+    {
       "url": "https://github.com/discreetlogcontracts/dlcspecs",
       "http_status": 200,
       "final_url": "https://github.com/discreetlogcontracts/dlcspecs",
@@ -469,6 +529,12 @@
       "http_status": 200,
       "final_url": "https://governance.aave.com/t/coinbase-wrapped-btc-cbbtc-on-aave-monad-assessments/25257",
       "result": "reachable"
+    },
+    {
+      "url": "https://help.coinbase.com/en/coinbase/trading-and-funding/sending-or-receiving-cryptocurrency/coinbase-wrapped-btc",
+      "http_status": 403,
+      "result": "http-error",
+      "note": "May be access protection; manual review required."
     },
     {
       "url": "https://hemi.xyz/",
@@ -597,6 +663,18 @@
       "result": "reachable"
     },
     {
+      "url": "https://rujira.network/",
+      "http_status": 200,
+      "final_url": "https://rujira.network/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://rujira.network/secured-assets",
+      "http_status": 200,
+      "final_url": "https://rujira.network/secured-assets",
+      "result": "reachable"
+    },
+    {
       "url": "https://second.tech/",
       "http_status": 200,
       "final_url": "https://second.tech/",
@@ -670,9 +748,9 @@
     },
     {
       "url": "https://venus.io/",
-      "http_status": 200,
-      "final_url": "https://venus.io/",
-      "result": "reachable"
+      "http_status": null,
+      "result": "unresolved",
+      "note": "<urlopen error _ssl.c:1112: The handshake operation timed out>"
     },
     {
       "url": "https://vesu.xyz/",
@@ -814,9 +892,15 @@
     },
     {
       "url": "https://www.lorenzo-protocol.xyz/",
-      "http_status": null,
-      "result": "unresolved",
-      "note": "The read operation timed out"
+      "http_status": 200,
+      "final_url": "https://www.lorenzo-protocol.xyz/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.openzeppelin.com/news/fiamma-bridge-audit",
+      "http_status": 200,
+      "final_url": "https://www.openzeppelin.com/news/fiamma-bridge-audit",
+      "result": "reachable"
     },
     {
       "url": "https://www.pendle.finance/",
@@ -864,18 +948,6 @@
       "url": "https://www.stacks.co/",
       "http_status": 200,
       "final_url": "https://www.stacks.co/",
-      "result": "reachable"
-    },
-    {
-      "url": "https://www.stacks.co/bitcoin-native-finance",
-      "http_status": 200,
-      "final_url": "https://www.stacks.co/bitcoin-native-finance",
-      "result": "reachable"
-    },
-    {
-      "url": "https://www.stacks.co/blog/q1-2026-snapshot",
-      "http_status": 200,
-      "final_url": "https://www.stacks.co/blog/q1-2026-snapshot",
       "result": "reachable"
     },
     {
