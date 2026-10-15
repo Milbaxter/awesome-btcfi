@@ -7,7 +7,7 @@
 
 Explore **Bitcoin-native contracts, payment layers, sidechains, BTC representations, staking, lending, stablecoins, trading and yield**, plus the infrastructure that makes them possible.
 
-**Research snapshot: September 25, 2026.** This is a broad, curated directory, not an exhaustive census, ranking, audit or investment recommendation. “Awesome” names the list format; inclusion is not an endorsement. Open source refers to **this repository**; listed projects have their own licensing and custody models.
+**Research snapshot: September 25, 2026; status update October 15, 2026.** This is a broad, curated directory, not an exhaustive census, ranking, audit or investment recommendation. “Awesome” names the list format; inclusion is not an endorsement. Open source refers to **this repository**; listed projects have their own licensing and custody models.
 
 ## Start here
 
@@ -31,7 +31,7 @@ The [detailed directory](docs/directory.md) supplies a Bitcoin mechanism and rev
 
 <!-- DIRECTORY:START -->
 
-**131 entries · 15 categories · reviewed 2026-09-25**
+**131 entries · 15 categories · reviewed 2026-10-15**
 
 ## Contents
 
@@ -80,7 +80,7 @@ The [detailed directory](docs/directory.md) supplies a Bitcoin mechanism and rev
 - [Fractal Bitcoin](https://docs.fractalbitcoin.io/) — Bitcoin-code-based scaling ecosystem supporting asset protocols and applications. · [Details & sources](docs/directory.md#fractal-bitcoin).
 - [GOAT Network](https://www.goat.network/) — Bitcoin-oriented execution ecosystem advertising BTC fee income and programmable applications. · [Details & sources](docs/directory.md#goat-network).
 - [Hemi](https://hemi.xyz/) — Bitcoin and Ethereum ecosystem offering programmable BTC-related finance and institutional access. · [Details & sources](docs/directory.md#hemi).
-- [Liquid Network](https://www.liquid.net/) — Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets. · [Details & sources](docs/directory.md#liquid-network).
+- [Liquid Network](https://www.liquid.net/) — Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets; LBTC peg-outs paused since a September 2026 exploit. · [Details & sources](docs/directory.md#liquid-network).
 - [Merlin Chain](https://merlinchain.io/) — EVM-compatible ecosystem supporting Bitcoin-linked assets and applications. · [Details & sources](docs/directory.md#merlin-chain).
 - [Rootstock](https://rootstock.io/) — Bitcoin-oriented EVM sidechain hosting lending, stablecoins and trading. · [Details & sources](docs/directory.md#rootstock).
 - [Stacks](https://www.stacks.co/) — Smart-contract network for Bitcoin applications, including lending and exchanges using sBTC. · [Details & sources](docs/directory.md#stacks).
@@ -96,7 +96,7 @@ The [detailed directory](docs/directory.md) supplies a Bitcoin mechanism and rev
 - [FBTC](https://fbtc.com/) — Bitcoin representation connecting custodial BTC reserves to destination-chain tokens. · [Details & sources](docs/directory.md#fbtc).
 - [Fiamma Bridge / fiaBTC](https://docs.fiammalabs.io/) — BitVM-related Bitcoin bridge and fiaBTC representation. `mainnet-announced` · [Details & sources](docs/directory.md#fiamma).
 - [iBTC Network / DLC.link](https://docs.ibtc.network/ibtc-documentation) — Bitcoin representation using merchant vaults and an attestor network. · [Details & sources](docs/directory.md#ibtc-network).
-- [L-BTC](https://www.liquid.net/) — Liquid's Bitcoin-pegged settlement asset. · [Details & sources](docs/directory.md#l-btc).
+- [L-BTC](https://www.liquid.net/) — Liquid's Bitcoin-pegged settlement asset; peg-outs to BTC paused since a September 2026 exploit. · [Details & sources](docs/directory.md#l-btc).
 - [sBTC](https://www.stacks.co/sbtc) — BTC-backed asset used by applications on Stacks. · [Details & sources](docs/directory.md#sbtc).
 - [strkBTC](https://www.starknet.io/blog/strkbtc-user-guide/) — Bitcoin representation on Starknet with optional shielded balances and staking integrations. · [Details & sources](docs/directory.md#strkbtc).
 - [tBTC](https://www.threshold.network/) — Threshold Network's Bitcoin bridge asset for DeFi. · [Details & sources](docs/directory.md#tbtc).

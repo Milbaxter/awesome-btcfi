@@ -1,14 +1,14 @@
 # Evidence coverage and review queue
 
-Snapshot: **2026-09-25** · [Method](methodology.md) · [Browse](browse.md) · [Editorial review](editorial-review.md)
+Snapshot: **2026-10-15** · [Method](methodology.md) · [Browse](browse.md) · [Editorial review](editorial-review.md)
 
 Generated from the dataset. Counts describe research coverage, not project quality or safety. Several sources from one publisher are not independent corroboration.
 
 | Measure | Count |
 | --- | ---: |
 | Total entries | 131 |
-| Entries with one cited source | 119 |
-| Entries citing only their listed website/resource URL | 86 |
+| Entries with one cited source | 109 |
+| Entries citing only their listed website/resource URL | 77 |
 | Evidence: code-only | 3 |
 | Evidence: direct-source | 124 |
 | Evidence: ecosystem-only | 4 |

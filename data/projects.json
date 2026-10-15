@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "title": "Awesome BTCFi",
-  "as_of": "2026-09-25",
+  "as_of": "2026-10-15",
   "scope": "A broad, curated and source-reviewed directory; not an exhaustive census or investment recommendation.",
   "categories": [
     {
@@ -514,12 +514,18 @@
           "url": "https://docs.gobob.xyz/",
           "type": "primary",
           "checked": "2026-09-25"
+        },
+        {
+          "url": "https://www.gobob.xyz/en/blog/wbtc-migration",
+          "type": "primary",
+          "checked": "2026-10-15",
+          "title": "wBTC.OFT migration notice (2026-09-29)"
         }
       ],
-      "last_reviewed": "2026-09-25",
+      "last_reviewed": "2026-10-15",
       "evidence": "direct-source",
       "lifecycle": "unverified",
-      "review_note": "Docs describe several products; do not assign one security model to all of them."
+      "review_note": "Docs describe several products; do not assign one security model to all of them. BOB says wBTC.OFT holders must manually migrate to bridged wBTC before its LayerZero endpoint closes on Oct 31, 2026."
     },
     {
       "id": "citrea",
@@ -595,12 +601,18 @@
           "url": "https://www.goat.network/",
           "type": "primary",
           "checked": "2026-09-25"
+        },
+        {
+          "url": "https://www.goat.network/news/stargate-sunset-and-layerzero-v2-dvn-executor-migration",
+          "type": "primary",
+          "checked": "2026-10-15",
+          "title": "Stargate sunset and LayerZero V2 migration (2026-10-02)"
         }
       ],
-      "last_reviewed": "2026-09-25",
+      "last_reviewed": "2026-10-15",
       "evidence": "direct-source",
       "lifecycle": "unverified",
-      "review_note": "BTC-denominated fees and GOATED rewards are distinct reward sources."
+      "review_note": "BTC-denominated fees and GOATED rewards are distinct reward sources. GOAT announced Stargate support ends Oct 23, 2026 and default LayerZero DVN/Executor service ends Oct 30; bridged USDC.e, USDT and WETH need exiting via Stargate before then."
     },
     {
       "id": "hemi",
@@ -638,20 +650,26 @@
         "Liquid"
       ],
       "kind": "network",
-      "description": "Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets.",
+      "description": "Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets; LBTC peg-outs paused since a September 2026 exploit.",
       "bitcoin_mechanism": "BTC is represented as L-BTC on a federation-operated sidechain.",
       "review_focus": "Federation control, peg-out access and issuer risk for non-BTC assets.",
       "sources": [
         {
           "url": "https://www.liquid.net/",
           "type": "primary",
-          "checked": "2026-09-25"
+          "checked": "2026-10-15"
+        },
+        {
+          "url": "https://blog.blockstream.com/liquid-network-security-incident-assessment/",
+          "type": "primary",
+          "checked": "2026-10-15",
+          "title": "Blockstream Liquid security incident assessment (2026-09-23)"
         }
       ],
-      "last_reviewed": "2026-09-25",
+      "last_reviewed": "2026-10-15",
       "evidence": "direct-source",
       "lifecycle": "unverified",
-      "review_note": "Sidechain settlement has additional trust assumptions beyond Bitcoin."
+      "review_note": "A Sept 6, 2026 Elements rangeproof-cache bug let an attacker mint unbacked LBTC and peg out about 4,000 BTC; about 3,400 BTC was returned. The official site still says peg-outs remain paused (checked 2026-10-15). Sidechain settlement has additional trust assumptions beyond Bitcoin."
     },
     {
       "id": "merlin-chain",
@@ -862,12 +880,18 @@
           "type": "primary",
           "checked": "2026-09-25",
           "title": "Clementine whitepaper"
+        },
+        {
+          "url": "https://www.blog.citrea.xyz/announcing-cbtc-earn-vault-first-trust-minimized-btc-vault/",
+          "type": "primary",
+          "checked": "2026-10-15",
+          "title": "cBTC Earn Vault announcement (2026-10-01)"
         }
       ],
-      "last_reviewed": "2026-09-25",
+      "last_reviewed": "2026-10-15",
       "evidence": "direct-source",
       "lifecycle": "unverified",
-      "review_note": "The whitepaper specifies an honest watchtower assumption within a permissioned set; implementation and deployed configuration require separate review."
+      "review_note": "The whitepaper specifies an honest watchtower assumption within a permissioned set; implementation and deployed configuration require separate review. Citrea's Oct 2026 cBTC Earn Vault is a separate curated carry strategy (cBTC collateral, ctUSD borrowing on Morpho) that adds curator, stablecoin and incentive dependencies."
     },
     {
       "id": "fbtc",
@@ -904,20 +928,26 @@
         "Liquid"
       ],
       "kind": "asset",
-      "description": "Liquid's Bitcoin-pegged settlement asset.",
+      "description": "Liquid's Bitcoin-pegged settlement asset; peg-outs to BTC paused since a September 2026 exploit.",
       "bitcoin_mechanism": "BTC locked under the Liquid federation's peg arrangements.",
       "review_focus": "Federation behavior, peg-out access and network liveness.",
       "sources": [
         {
           "url": "https://www.liquid.net/",
           "type": "primary",
-          "checked": "2026-09-25"
+          "checked": "2026-10-15"
+        },
+        {
+          "url": "https://blog.blockstream.com/liquid-network-security-incident-assessment/",
+          "type": "primary",
+          "checked": "2026-10-15",
+          "title": "Blockstream Liquid security incident assessment (2026-09-23)"
         }
       ],
-      "last_reviewed": "2026-09-25",
+      "last_reviewed": "2026-10-15",
       "evidence": "direct-source",
       "lifecycle": "unverified",
-      "review_note": "Holding L-BTC is not identical to holding a Bitcoin L1 UTXO."
+      "review_note": "Holding L-BTC is not identical to holding a Bitcoin L1 UTXO. After the Sept 2026 incident roughly 600 BTC of the drained reserve was reported unreturned; check current backing and peg-out status before relying on redemption."
     },
     {
       "id": "sbtc",
@@ -1013,12 +1043,18 @@
           "url": "https://www.wbtc.network/",
           "type": "primary",
           "checked": "2026-09-25"
+        },
+        {
+          "url": "https://www.gobob.xyz/en/blog/wbtc-migration",
+          "type": "secondary",
+          "checked": "2026-10-15",
+          "title": "BOB wBTC.OFT migration notice (2026-09-29)"
         }
       ],
-      "last_reviewed": "2026-09-25",
+      "last_reviewed": "2026-10-15",
       "evidence": "direct-source",
       "lifecycle": "unverified",
-      "review_note": "A BTC wrapper, not a yield product by itself."
+      "review_note": "A BTC wrapper, not a yield product by itself. BOB reports that BitGo is moving WBTC cross-chain transfers from LayerZero OFT to Chainlink CCIP, which affects bridged WBTC contract identity per chain."
     },
     {
       "id": "babylon-bitcoin-staking",
@@ -1186,12 +1222,18 @@
           "url": "https://www.stackingdao.com/",
           "type": "primary",
           "checked": "2026-09-25"
+        },
+        {
+          "url": "https://www.stacks.co/blog/bitcoin-staking-bond-2-liquid-staking",
+          "type": "primary",
+          "checked": "2026-10-15",
+          "title": "Stacks Bitcoin Staking Bond 2 (2026-10-05)"
         }
       ],
-      "last_reviewed": "2026-09-25",
+      "last_reviewed": "2026-10-15",
       "evidence": "direct-source",
       "lifecycle": "unverified",
-      "review_note": "Current homepage offers BTC/sBTC deposits into stBTC; older STX-only descriptions are incomplete."
+      "review_note": "Current homepage offers BTC/sBTC deposits into stBTC; older STX-only descriptions are incomplete. Stacks says StackingDAO holds most of Bitcoin Staking Bond 2 capacity, issuing stBTC over sBTC; rewards come from PoX miner BTC with Endowment-set bootstrap targets, not a guaranteed rate."
     },
     {
       "id": "starknet-bitcoin-staking",
@@ -1284,12 +1326,18 @@
           "url": "https://babylonlabs.io/",
           "type": "primary",
           "checked": "2026-09-25"
+        },
+        {
+          "url": "https://babylonlabs.io/blog/hashkey-cloud-to-integrate-babylon-trustless-bitcoin-vaults",
+          "type": "primary",
+          "checked": "2026-10-15",
+          "title": "HashKey Cloud TBV integration (2026-10-07)"
         }
       ],
-      "last_reviewed": "2026-09-25",
+      "last_reviewed": "2026-10-15",
       "evidence": "direct-source",
       "lifecycle": "testnet",
-      "review_note": "Homepage's TBV access link points to a testnet app; the Aave integration is not labeled as a verified live lending market here."
+      "review_note": "An Oct 7, 2026 post still describes TBV-backed borrowing as live on Aave v4 testnet; the access link points to a testnet app. No mainnet lending market is verified here."
     },
     {
       "id": "debifi",
@@ -1758,12 +1806,18 @@
           "url": "https://mezo.org/",
           "type": "primary",
           "checked": "2026-09-25"
+        },
+        {
+          "url": "https://mezo.org/blog/incident-report-october-5-2026/",
+          "type": "primary",
+          "checked": "2026-10-15",
+          "title": "veBTC incident report (2026-10-07)"
         }
       ],
-      "last_reviewed": "2026-09-25",
+      "last_reviewed": "2026-10-15",
       "evidence": "direct-source",
       "lifecycle": "unverified",
-      "review_note": "MUSD's dollar target is distinct from holding BTC; Upshift-powered vaults are a separate product."
+      "review_note": "MUSD's dollar target is distinct from holding BTC; Upshift-powered vaults are a separate product. An Oct 5, 2026 veBTC VotingEscrow meta-transaction flaw let an attacker take about 5.52 BTC from 37 positions; Mezo says it was fixed Oct 6 and affected users will be repaid in BTC."
     },
     {
       "id": "money-on-chain",
@@ -2804,12 +2858,18 @@
           "url": "https://elementsproject.org/",
           "type": "primary",
           "checked": "2026-09-25"
+        },
+        {
+          "url": "https://blog.blockstream.com/liquid-network-security-incident-assessment/",
+          "type": "primary",
+          "checked": "2026-10-15",
+          "title": "Blockstream Liquid security incident assessment (2026-09-23)"
         }
       ],
-      "last_reviewed": "2026-09-25",
+      "last_reviewed": "2026-10-15",
       "evidence": "direct-source",
       "lifecycle": "not-applicable",
-      "review_note": "Software capability does not certify any chain built from it."
+      "review_note": "Software capability does not certify any chain built from it. The rangeproof-cache flaw behind the Sept 2026 Liquid incident was fixed in Elements v23.3.4."
     },
     {
       "id": "layeredge",

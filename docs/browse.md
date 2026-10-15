@@ -138,7 +138,7 @@ Expand a group to browse its entries.
 - [Hemi](directory.md#hemi) — Bitcoin and Ethereum ecosystem offering programmable BTC-related finance and institutional access.
 - [Hermetica](directory.md#hermetica) — USDh synthetic dollar and its staked receipt sUSDh, using BTC exposure and derivatives hedging.
 - [iBTC Network / DLC.link](directory.md#ibtc-network) — Bitcoin representation using merchant vaults and an attestor network.
-- [L-BTC](directory.md#l-btc) — Liquid's Bitcoin-pegged settlement asset.
+- [L-BTC](directory.md#l-btc) — Liquid's Bitcoin-pegged settlement asset; peg-outs to BTC paused since a September 2026 exploit.
 - [Lava](directory.md#lava) — Bitcoin-collateralized dollar borrowing and related spending services.
 - [LayerEdge](directory.md#layeredge) — Proof aggregation and anchoring infrastructure for external applications.
 - [Leather](directory.md#leather) — Wallet for Bitcoin, Stacks assets and ecosystem applications.
@@ -148,7 +148,7 @@ Expand a group to browse its entries.
 - [LendaSwap](directory.md#lendaswap) — Bitcoin-to-stablecoin swaps associated with Lendasat.
 - [Lightning Loop](directory.md#lightning-loop) — Submarine swaps for moving value between Lightning and on-chain Bitcoin.
 - [Lightning Network](directory.md#lightning-network) — Payment channels that route BTC off-chain and can settle to Bitcoin.
-- [Liquid Network](directory.md#liquid-network) — Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets.
+- [Liquid Network](directory.md#liquid-network) — Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets; LBTC peg-outs paused since a September 2026 exploit.
 - [Liquidium](directory.md#liquidium) — BTC loans secured by supported Ordinals or Runes, with lenders exposed to the collateral on default.
 - [LN Markets](directory.md#ln-markets) — Bitcoin derivatives interface using Lightning and external exchange liquidity.
 - [Lombard LBTC](directory.md#lombard-lbtc) — Yield-bearing BTC asset now tied to a Bitwise-managed covered-call strategy.
@@ -328,8 +328,8 @@ Expand a group to browse its entries.
 - [Boltz](directory.md#boltz) — Submarine and chain swaps across Bitcoin payment layers, with additional stablecoin routes.
 - [Breez SDK](directory.md#breez-sdk) — SDKs for embedding Bitcoin payments into applications.
 - [Elements](directory.md#elements) — Sidechain-capable software with confidential transactions and asset issuance.
-- [L-BTC](directory.md#l-btc) — Liquid's Bitcoin-pegged settlement asset.
-- [Liquid Network](directory.md#liquid-network) — Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets.
+- [L-BTC](directory.md#l-btc) — Liquid's Bitcoin-pegged settlement asset; peg-outs to BTC paused since a September 2026 exploit.
+- [Liquid Network](directory.md#liquid-network) — Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets; LBTC peg-outs paused since a September 2026 exploit.
 - [SideSwap](directory.md#sideswap) — Peer-to-peer swaps and settlement tools for Liquid assets.
 
 </details>
@@ -557,7 +557,7 @@ Expand a group to browse its entries.
 - [Hemi](directory.md#hemi) — Bitcoin and Ethereum ecosystem offering programmable BTC-related finance and institutional access.
 - [Hermetica](directory.md#hermetica) — USDh synthetic dollar and its staked receipt sUSDh, using BTC exposure and derivatives hedging.
 - [iBTC Network / DLC.link](directory.md#ibtc-network) — Bitcoin representation using merchant vaults and an attestor network.
-- [L-BTC](directory.md#l-btc) — Liquid's Bitcoin-pegged settlement asset.
+- [L-BTC](directory.md#l-btc) — Liquid's Bitcoin-pegged settlement asset; peg-outs to BTC paused since a September 2026 exploit.
 - [Lava](directory.md#lava) — Bitcoin-collateralized dollar borrowing and related spending services.
 - [LayerEdge](directory.md#layeredge) — Proof aggregation and anchoring infrastructure for external applications.
 - [Leather](directory.md#leather) — Wallet for Bitcoin, Stacks assets and ecosystem applications.
@@ -569,7 +569,7 @@ Expand a group to browse its entries.
 - [Lightning Loop](directory.md#lightning-loop) — Submarine swaps for moving value between Lightning and on-chain Bitcoin.
 - [Lightning Network](directory.md#lightning-network) — Payment channels that route BTC off-chain and can settle to Bitcoin.
 - [Lightning Pool](directory.md#lightning-pool) — Marketplace for leasing Lightning channel liquidity.
-- [Liquid Network](directory.md#liquid-network) — Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets.
+- [Liquid Network](directory.md#liquid-network) — Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets; LBTC peg-outs paused since a September 2026 exploit.
 - [Liquidium](directory.md#liquidium) — BTC loans secured by supported Ordinals or Runes, with lenders exposed to the collateral on default.
 - [LN Markets](directory.md#ln-markets) — Bitcoin derivatives interface using Lightning and external exchange liquidity.
 - [Lombard LBTC](directory.md#lombard-lbtc) — Yield-bearing BTC asset now tied to a Bitwise-managed covered-call strategy.
@@ -759,7 +759,7 @@ Expand a group to browse its entries.
 - [Hermetica](directory.md#hermetica) — USDh synthetic dollar and its staked receipt sUSDh, using BTC exposure and derivatives hedging.
 - [iBTC Network / DLC.link](directory.md#ibtc-network) — Bitcoin representation using merchant vaults and an attestor network.
 - [JuiceSwap](directory.md#juiceswap) — Exchange listed among Citrea's Bitcoin applications.
-- [L-BTC](directory.md#l-btc) — Liquid's Bitcoin-pegged settlement asset.
+- [L-BTC](directory.md#l-btc) — Liquid's Bitcoin-pegged settlement asset; peg-outs to BTC paused since a September 2026 exploit.
 - [Lava](directory.md#lava) — Bitcoin-collateralized dollar borrowing and related spending services.
 - [LayerEdge](directory.md#layeredge) — Proof aggregation and anchoring infrastructure for external applications.
 - [Leather](directory.md#leather) — Wallet for Bitcoin, Stacks assets and ecosystem applications.
@@ -770,7 +770,7 @@ Expand a group to browse its entries.
 - [Lightning Loop](directory.md#lightning-loop) — Submarine swaps for moving value between Lightning and on-chain Bitcoin.
 - [Lightning Network](directory.md#lightning-network) — Payment channels that route BTC off-chain and can settle to Bitcoin.
 - [Lightning Pool](directory.md#lightning-pool) — Marketplace for leasing Lightning channel liquidity.
-- [Liquid Network](directory.md#liquid-network) — Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets.
+- [Liquid Network](directory.md#liquid-network) — Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets; LBTC peg-outs paused since a September 2026 exploit.
 - [Liquidium](directory.md#liquidium) — BTC loans secured by supported Ordinals or Runes, with lenders exposed to the collateral on default.
 - [LN Markets](directory.md#ln-markets) — Bitcoin derivatives interface using Lightning and external exchange liquidity.
 - [Lorenzo Protocol](directory.md#lorenzo-protocol) — Bitcoin liquidity and asset-management infrastructure, including stBTC-related designs.
@@ -883,7 +883,7 @@ Expand a group to browse its entries.
 - [ctUSD](directory.md#ctusd) — Dollar stablecoin within the Citrea ecosystem described as backed by cash and short-term Treasury bills.
 - [FBTC](directory.md#fbtc) — Bitcoin representation connecting custodial BTC reserves to destination-chain tokens.
 - [iBTC Network / DLC.link](directory.md#ibtc-network) — Bitcoin representation using merchant vaults and an attestor network.
-- [L-BTC](directory.md#l-btc) — Liquid's Bitcoin-pegged settlement asset.
+- [L-BTC](directory.md#l-btc) — Liquid's Bitcoin-pegged settlement asset; peg-outs to BTC paused since a September 2026 exploit.
 - [Lombard LBTC](directory.md#lombard-lbtc) — Yield-bearing BTC asset now tied to a Bitwise-managed covered-call strategy.
 - [sBTC](directory.md#sbtc) — BTC-backed asset used by applications on Stacks.
 - [strkBTC](directory.md#strkbtc) — Bitcoin representation on Starknet with optional shielded balances and staking integrations.
@@ -951,7 +951,7 @@ Expand a group to browse its entries.
 - [Fractal Bitcoin](directory.md#fractal-bitcoin) — Bitcoin-code-based scaling ecosystem supporting asset protocols and applications.
 - [GOAT Network](directory.md#goat-network) — Bitcoin-oriented execution ecosystem advertising BTC fee income and programmable applications.
 - [Hemi](directory.md#hemi) — Bitcoin and Ethereum ecosystem offering programmable BTC-related finance and institutional access.
-- [Liquid Network](directory.md#liquid-network) — Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets.
+- [Liquid Network](directory.md#liquid-network) — Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets; LBTC peg-outs paused since a September 2026 exploit.
 - [Merlin Chain](directory.md#merlin-chain) — EVM-compatible ecosystem supporting Bitcoin-linked assets and applications.
 - [Rootstock](directory.md#rootstock) — Bitcoin-oriented EVM sidechain hosting lending, stablecoins and trading.
 - [Stacks](directory.md#stacks) — Smart-contract network for Bitcoin applications, including lending and exchanges using sBTC.

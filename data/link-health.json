@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T11:55:26.705355+00:00",
+  "checked_at": "2026-10-15T02:16:06.645076+00:00",
   "meaning": "HTTP reachability only. A 200 response is not proof of an active service; failure is not proof of closure.",
   "results": [
     {
@@ -100,9 +100,9 @@
     },
     {
       "url": "https://bitlightlabs.com/wallet",
-      "http_status": 403,
-      "result": "http-error",
-      "note": "May be access protection; manual review required."
+      "http_status": 200,
+      "final_url": "https://bitlightlabs.com/wallet",
+      "result": "reachable"
     },
     {
       "url": "https://bitvm.org/",
@@ -172,21 +172,21 @@
     },
     {
       "url": "https://debifi.com/",
-      "http_status": null,
-      "result": "unresolved",
-      "note": "<urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>"
+      "http_status": 200,
+      "final_url": "https://debifi.com/",
+      "result": "reachable"
     },
     {
       "url": "https://defillama.com/chain/bitcoin",
-      "http_status": 403,
-      "result": "http-error",
-      "note": "May be access protection; manual review required."
+      "http_status": 200,
+      "final_url": "https://defillama.com/chain/bitcoin",
+      "result": "reachable"
     },
     {
       "url": "https://defillama.com/chain/bitcoin?currency=USD",
-      "http_status": 403,
-      "result": "http-error",
-      "note": "May be access protection; manual review required."
+      "http_status": 200,
+      "final_url": "https://defillama.com/chain/bitcoin?currency=USD",
+      "result": "reachable"
     },
     {
       "url": "https://dlc.wiki/",
@@ -401,7 +401,7 @@
     {
       "url": "https://docs.rujira.network/core-products/ruji-money-market",
       "http_status": 200,
-      "final_url": "https://docs.rujira.network/core-products/ruji-money-market",
+      "final_url": "https://docs.rujira.network/core-products/rujira-money-market",
       "result": "reachable"
     },
     {
@@ -532,9 +532,9 @@
     },
     {
       "url": "https://help.coinbase.com/en/coinbase/trading-and-funding/sending-or-receiving-cryptocurrency/coinbase-wrapped-btc",
-      "http_status": 403,
-      "result": "http-error",
-      "note": "May be access protection; manual review required."
+      "http_status": 200,
+      "final_url": "https://help.coinbase.com/en/coinbase/trading-and-funding/sending-or-receiving-cryptocurrency/coinbase-wrapped-btc",
+      "result": "reachable"
     },
     {
       "url": "https://hemi.xyz/",
@@ -556,9 +556,9 @@
     },
     {
       "url": "https://lend.hodlhodl.com/",
-      "http_status": null,
-      "result": "unresolved",
-      "note": "<urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>"
+      "http_status": 200,
+      "final_url": "https://lend.hodlhodl.com/",
+      "result": "reachable"
     },
     {
       "url": "https://lendasat.com/docs",
@@ -748,9 +748,9 @@
     },
     {
       "url": "https://venus.io/",
-      "http_status": null,
-      "result": "unresolved",
-      "note": "<urlopen error _ssl.c:1112: The handshake operation timed out>"
+      "http_status": 200,
+      "final_url": "https://venus.io/",
+      "result": "reachable"
     },
     {
       "url": "https://vesu.xyz/",
@@ -838,9 +838,9 @@
     },
     {
       "url": "https://www.coinbase.com/cbbtc",
-      "http_status": 403,
-      "result": "http-error",
-      "note": "May be access protection; manual review required."
+      "http_status": 200,
+      "final_url": "https://www.coinbase.com/cbbtc",
+      "result": "reachable"
     },
     {
       "url": "https://www.endur.fi/",

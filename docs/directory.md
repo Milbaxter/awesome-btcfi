@@ -1,6 +1,6 @@
 # Detailed BTCFi directory
 
-Snapshot: **2026-09-25**. [Method and status definitions](methodology.md) · [Awesome list](../README.md)
+Snapshot: **2026-10-15**. [Method and status definitions](methodology.md) · [Awesome list](../README.md)
 
 Descriptions summarize publisher documentation. Review focuses are editorial questions, not completed security assessments. Network tags describe relevance, not a certified list of live deployments.
 
@@ -268,7 +268,7 @@ Bitcoin execution ecosystem associated with BitVM infrastructure and the YBTC pr
 <a id="bob"></a>
 ### BOB
 
-**Type:** network · **Networks:** Bitcoin, Ethereum, BOB · **Reviewed:** 2026-09-25
+**Type:** network · **Networks:** Bitcoin, Ethereum, BOB · **Reviewed:** 2026-10-15
 
 **Evidence:** `direct-source` · **Lifecycle:** `unverified`
 
@@ -276,9 +276,10 @@ Hybrid-chain ecosystem with Bitcoin intents, DeFi access and Bitcoin vault devel
 
 - **Bitcoin mechanism:** EVM execution plus route-dependent bridging, intents and BitVM-related infrastructure.
 - **Review focus:** Current chain stage, privileged roles and the exact bridge or vault used.
-- **Evidence and availability qualification:** Docs describe several products; do not assign one security model to all of them.
+- **Evidence and availability qualification:** Docs describe several products; do not assign one security model to all of them. BOB says wBTC.OFT holders must manually migrate to bridged wBTC before its LayerZero endpoint closes on Oct 31, 2026.
 - **Project/resource:** [BOB](https://docs.gobob.xyz/)
 - **Source 1:** [Primary source](https://docs.gobob.xyz/) — primary; reviewed 2026-09-25.
+- **Source 2:** [wBTC.OFT migration notice (2026-09-29)](https://www.gobob.xyz/en/blog/wbtc-migration) — primary; reviewed 2026-10-15.
 
 <a id="citrea"></a>
 ### Citrea
@@ -314,7 +315,7 @@ Bitcoin-code-based scaling ecosystem supporting asset protocols and applications
 <a id="goat-network"></a>
 ### GOAT Network
 
-**Type:** network · **Networks:** Bitcoin, GOAT · **Reviewed:** 2026-09-25
+**Type:** network · **Networks:** Bitcoin, GOAT · **Reviewed:** 2026-10-15
 
 **Evidence:** `direct-source` · **Lifecycle:** `unverified`
 
@@ -322,9 +323,10 @@ Bitcoin-oriented execution ecosystem advertising BTC fee income and programmable
 
 - **Bitcoin mechanism:** Separate execution network, bridge and operator arrangements.
 - **Review focus:** BTC entry and exit path, operators, upgrades and fees versus token incentives.
-- **Evidence and availability qualification:** BTC-denominated fees and GOATED rewards are distinct reward sources.
+- **Evidence and availability qualification:** BTC-denominated fees and GOATED rewards are distinct reward sources. GOAT announced Stargate support ends Oct 23, 2026 and default LayerZero DVN/Executor service ends Oct 30; bridged USDC.e, USDT and WETH need exiting via Stargate before then.
 - **Project/resource:** [GOAT Network](https://www.goat.network/)
 - **Source 1:** [Primary source](https://www.goat.network/) — primary; reviewed 2026-09-25.
+- **Source 2:** [Stargate sunset and LayerZero V2 migration (2026-10-02)](https://www.goat.network/news/stargate-sunset-and-layerzero-v2-dvn-executor-migration) — primary; reviewed 2026-10-15.
 
 <a id="hemi"></a>
 ### Hemi
@@ -344,17 +346,18 @@ Bitcoin and Ethereum ecosystem offering programmable BTC-related finance and ins
 <a id="liquid-network"></a>
 ### Liquid Network
 
-**Type:** network · **Networks:** Bitcoin, Liquid · **Reviewed:** 2026-09-25
+**Type:** network · **Networks:** Bitcoin, Liquid · **Reviewed:** 2026-10-15
 
 **Evidence:** `direct-source` · **Lifecycle:** `unverified`
 
-Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets.
+Federated Bitcoin sidechain for confidential transfers, asset issuance and capital markets; LBTC peg-outs paused since a September 2026 exploit.
 
 - **Bitcoin mechanism:** BTC is represented as L-BTC on a federation-operated sidechain.
 - **Review focus:** Federation control, peg-out access and issuer risk for non-BTC assets.
-- **Evidence and availability qualification:** Sidechain settlement has additional trust assumptions beyond Bitcoin.
+- **Evidence and availability qualification:** A Sept 6, 2026 Elements rangeproof-cache bug let an attacker mint unbacked LBTC and peg out about 4,000 BTC; about 3,400 BTC was returned. The official site still says peg-outs remain paused (checked 2026-10-15). Sidechain settlement has additional trust assumptions beyond Bitcoin.
 - **Project/resource:** [Liquid Network](https://www.liquid.net/)
-- **Source 1:** [Primary source](https://www.liquid.net/) — primary; reviewed 2026-09-25.
+- **Source 1:** [Primary source](https://www.liquid.net/) — primary; reviewed 2026-10-15.
+- **Source 2:** [Blockstream Liquid security incident assessment (2026-09-23)](https://blog.blockstream.com/liquid-network-security-incident-assessment/) — primary; reviewed 2026-10-15.
 
 <a id="merlin-chain"></a>
 ### Merlin Chain
@@ -468,7 +471,7 @@ Chain-key BTC representation managed by Internet Computer canisters.
 <a id="clementine-and-cbtc"></a>
 ### Clementine and cBTC
 
-**Type:** bridge · **Networks:** Bitcoin, Citrea · **Reviewed:** 2026-09-25
+**Type:** bridge · **Networks:** Bitcoin, Citrea · **Reviewed:** 2026-10-15
 
 **Evidence:** `direct-source` · **Lifecycle:** `unverified`
 
@@ -476,9 +479,10 @@ Citrea's bridge and BTC representation for its application environment.
 
 - **Bitcoin mechanism:** BitVM-based optimistic verification in the documented bridge design.
 - **Review focus:** Operator and challenger requirements, withdrawal liquidity and dispute windows.
-- **Evidence and availability qualification:** The whitepaper specifies an honest watchtower assumption within a permissioned set; implementation and deployed configuration require separate review.
+- **Evidence and availability qualification:** The whitepaper specifies an honest watchtower assumption within a permissioned set; implementation and deployed configuration require separate review. Citrea's Oct 2026 cBTC Earn Vault is a separate curated carry strategy (cBTC collateral, ctUSD borrowing on Morpho) that adds curator, stablecoin and incentive dependencies.
 - **Project/resource:** [Clementine and cBTC](https://citrea.xyz/)
 - **Source 1:** [Clementine whitepaper](https://citrea.xyz/clementine_whitepaper.pdf) — primary; reviewed 2026-09-25.
+- **Source 2:** [cBTC Earn Vault announcement (2026-10-01)](https://www.blog.citrea.xyz/announcing-cbtc-earn-vault-first-trust-minimized-btc-vault/) — primary; reviewed 2026-10-15.
 
 <a id="fbtc"></a>
 ### FBTC
@@ -531,17 +535,18 @@ Bitcoin representation using merchant vaults and an attestor network.
 <a id="l-btc"></a>
 ### L-BTC
 
-**Type:** asset · **Networks:** Bitcoin, Liquid · **Reviewed:** 2026-09-25
+**Type:** asset · **Networks:** Bitcoin, Liquid · **Reviewed:** 2026-10-15
 
 **Evidence:** `direct-source` · **Lifecycle:** `unverified`
 
-Liquid's Bitcoin-pegged settlement asset.
+Liquid's Bitcoin-pegged settlement asset; peg-outs to BTC paused since a September 2026 exploit.
 
 - **Bitcoin mechanism:** BTC locked under the Liquid federation's peg arrangements.
 - **Review focus:** Federation behavior, peg-out access and network liveness.
-- **Evidence and availability qualification:** Holding L-BTC is not identical to holding a Bitcoin L1 UTXO.
+- **Evidence and availability qualification:** Holding L-BTC is not identical to holding a Bitcoin L1 UTXO. After the Sept 2026 incident roughly 600 BTC of the drained reserve was reported unreturned; check current backing and peg-out status before relying on redemption.
 - **Project/resource:** [L-BTC](https://www.liquid.net/)
-- **Source 1:** [Primary source](https://www.liquid.net/) — primary; reviewed 2026-09-25.
+- **Source 1:** [Primary source](https://www.liquid.net/) — primary; reviewed 2026-10-15.
+- **Source 2:** [Blockstream Liquid security incident assessment (2026-09-23)](https://blog.blockstream.com/liquid-network-security-incident-assessment/) — primary; reviewed 2026-10-15.
 
 <a id="sbtc"></a>
 ### sBTC
@@ -591,7 +596,7 @@ Threshold Network's Bitcoin bridge asset for DeFi.
 <a id="wbtc"></a>
 ### WBTC
 
-**Type:** asset · **Networks:** Bitcoin, Multichain · **Reviewed:** 2026-09-25
+**Type:** asset · **Networks:** Bitcoin, Multichain · **Reviewed:** 2026-10-15
 
 **Evidence:** `direct-source` · **Lifecycle:** `unverified`
 
@@ -599,9 +604,10 @@ Custodially backed Bitcoin representation used across DeFi markets.
 
 - **Bitcoin mechanism:** BTC reserves, authorized merchants and token contracts on destination chains.
 - **Review focus:** Custodian arrangements, mint and redemption access, freeze controls and additional bridge layers.
-- **Evidence and availability qualification:** A BTC wrapper, not a yield product by itself.
+- **Evidence and availability qualification:** A BTC wrapper, not a yield product by itself. BOB reports that BitGo is moving WBTC cross-chain transfers from LayerZero OFT to Chainlink CCIP, which affects bridged WBTC contract identity per chain.
 - **Project/resource:** [WBTC](https://www.wbtc.network/)
 - **Source 1:** [Primary source](https://www.wbtc.network/) — primary; reviewed 2026-09-25.
+- **Source 2:** [BOB wBTC.OFT migration notice (2026-09-29)](https://www.gobob.xyz/en/blog/wbtc-migration) — secondary; reviewed 2026-10-15.
 
 ## Staking and shared security
 
@@ -698,7 +704,7 @@ Shared-security contracts on Babylon for Bitcoin Validated Services.
 <a id="stacking-dao"></a>
 ### Stacking DAO
 
-**Type:** protocol · **Networks:** Stacks, Bitcoin · **Reviewed:** 2026-09-25
+**Type:** protocol · **Networks:** Stacks, Bitcoin · **Reviewed:** 2026-10-15
 
 **Evidence:** `direct-source` · **Lifecycle:** `unverified`
 
@@ -706,9 +712,10 @@ Liquid staking products for BTC and STX, including stBTC, stSTX and stSTXbtc.
 
 - **Bitcoin mechanism:** Stacks staking mechanisms and liquid receipt tokens.
 - **Review focus:** Asset identity, signer or contract dependencies, redemption and yield source.
-- **Evidence and availability qualification:** Current homepage offers BTC/sBTC deposits into stBTC; older STX-only descriptions are incomplete.
+- **Evidence and availability qualification:** Current homepage offers BTC/sBTC deposits into stBTC; older STX-only descriptions are incomplete. Stacks says StackingDAO holds most of Bitcoin Staking Bond 2 capacity, issuing stBTC over sBTC; rewards come from PoX miner BTC with Endowment-set bootstrap targets, not a guaranteed rate.
 - **Project/resource:** [Stacking DAO](https://www.stackingdao.com/)
 - **Source 1:** [Primary source](https://www.stackingdao.com/) — primary; reviewed 2026-09-25.
+- **Source 2:** [Stacks Bitcoin Staking Bond 2 (2026-10-05)](https://www.stacks.co/blog/bitcoin-staking-bond-2-liquid-staking) — primary; reviewed 2026-10-15.
 
 <a id="starknet-bitcoin-staking"></a>
 ### Starknet Bitcoin staking
@@ -760,7 +767,7 @@ Bitcoin-focused on-chain money markets, USDa borrowing and separate institutiona
 <a id="babylon-trustless-bitcoin-vaults"></a>
 ### Babylon Trustless Bitcoin Vaults
 
-**Type:** infrastructure · **Networks:** Bitcoin, Ethereum · **Reviewed:** 2026-09-25
+**Type:** infrastructure · **Networks:** Bitcoin, Ethereum · **Reviewed:** 2026-10-15
 
 **Evidence:** `direct-source` · **Lifecycle:** `testnet`
 
@@ -768,9 +775,10 @@ Native BTC collateral infrastructure targeting applications such as external-cha
 
 - **Bitcoin mechanism:** BTCVault construction with external recognition of Bitcoin collateral.
 - **Review focus:** Actual testnet/mainnet stage, liquidation path, proof system and recovery conditions.
-- **Evidence and availability qualification:** Homepage's TBV access link points to a testnet app; the Aave integration is not labeled as a verified live lending market here.
+- **Evidence and availability qualification:** An Oct 7, 2026 post still describes TBV-backed borrowing as live on Aave v4 testnet; the access link points to a testnet app. No mainnet lending market is verified here.
 - **Project/resource:** [Babylon Trustless Bitcoin Vaults](https://babylonlabs.io/)
 - **Source 1:** [Primary source](https://babylonlabs.io/) — primary; reviewed 2026-09-25.
+- **Source 2:** [HashKey Cloud TBV integration (2026-10-07)](https://babylonlabs.io/blog/hashkey-cloud-to-integrate-babylon-trustless-bitcoin-vaults) — primary; reviewed 2026-10-15.
 
 <a id="debifi"></a>
 ### Debifi
@@ -1048,7 +1056,7 @@ USDh synthetic dollar and its staked receipt sUSDh, using BTC exposure and deriv
 <a id="mezo"></a>
 ### Mezo
 
-**Type:** application · **Networks:** Bitcoin, Mezo · **Reviewed:** 2026-09-25
+**Type:** application · **Networks:** Bitcoin, Mezo · **Reviewed:** 2026-10-15
 
 **Evidence:** `direct-source` · **Lifecycle:** `unverified`
 
@@ -1056,9 +1064,10 @@ Bitcoin finance platform with BTC-backed MUSD borrowing and yield-vault access.
 
 - **Bitcoin mechanism:** Bitcoin-linked collateral on Mezo and application-specific debt/vault contracts.
 - **Review focus:** Collateral bridge, liquidation and redemption rules; vaults add curator risk.
-- **Evidence and availability qualification:** MUSD's dollar target is distinct from holding BTC; Upshift-powered vaults are a separate product.
+- **Evidence and availability qualification:** MUSD's dollar target is distinct from holding BTC; Upshift-powered vaults are a separate product. An Oct 5, 2026 veBTC VotingEscrow meta-transaction flaw let an attacker take about 5.52 BTC from 37 positions; Mezo says it was fixed Oct 6 and affected users will be repaid in BTC.
 - **Project/resource:** [Mezo](https://mezo.org/)
 - **Source 1:** [Primary source](https://mezo.org/) — primary; reviewed 2026-09-25.
+- **Source 2:** [veBTC incident report (2026-10-07)](https://mezo.org/blog/incident-report-october-5-2026/) — primary; reviewed 2026-10-15.
 
 <a id="money-on-chain"></a>
 ### Money On Chain
@@ -1694,7 +1703,7 @@ SDKs for embedding Bitcoin payments into applications.
 <a id="elements"></a>
 ### Elements
 
-**Type:** developer-tool · **Networks:** Liquid, Sidechains · **Reviewed:** 2026-09-25
+**Type:** developer-tool · **Networks:** Liquid, Sidechains · **Reviewed:** 2026-10-15
 
 **Evidence:** `direct-source` · **Lifecycle:** `not-applicable`
 
@@ -1702,9 +1711,10 @@ Sidechain-capable software with confidential transactions and asset issuance.
 
 - **Bitcoin mechanism:** Independent or pegged chains with configurable consensus.
 - **Review focus:** Operator model, peg construction and issued-asset obligations.
-- **Evidence and availability qualification:** Software capability does not certify any chain built from it.
+- **Evidence and availability qualification:** Software capability does not certify any chain built from it. The rangeproof-cache flaw behind the Sept 2026 Liquid incident was fixed in Elements v23.3.4.
 - **Project/resource:** [Elements](https://elementsproject.org/)
 - **Source 1:** [Primary source](https://elementsproject.org/) — primary; reviewed 2026-09-25.
+- **Source 2:** [Blockstream Liquid security incident assessment (2026-09-23)](https://blog.blockstream.com/liquid-network-security-incident-assessment/) — primary; reviewed 2026-10-15.
 
 <a id="layeredge"></a>
 ### LayerEdge
